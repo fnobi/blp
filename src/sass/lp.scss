@@ -1,0 +1,39 @@
+@import "compass";
+@import "compass/reset";
+
+#wrapper {
+    width: 640px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.photo {
+    img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+}
+
+.text {
+    strong {
+        font-weight: bold;
+    }
+}
+
+.link {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0px;
+
+    a {
+        text-decoration: none;
+    }
+}

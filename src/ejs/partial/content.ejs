@@ -1,0 +1,11 @@
+<% locals.partial_content = function (buf, opts) { %>
+<h1><%= opts.title %></h1><%= (opts.env == 'tumblr') ? '{block:Posts}' : '' %><% opts.posts.forEach(function (post) { %><% if (post.type == 'text') { %><%= (opts.env == 'tumblr') ? '{block:Text}' : '' %>
+<section class="text<%= post.tags ? (' ' + post.tags) : '' %>">
+<%- post.body %>
+<!-- /.text --></section><%= (opts.env == 'tumblr') ? '{/block:Text}' : '' %><% } %><% if (post.type == 'link') { %><%= (opts.env == 'tumblr') ? '{block:Link}' : '' %>
+<section class="link<%= post.tags ? (' ' + post.tags) : '' %>">
+<a href="<%= post.url %>" target="_blank"><i class="fa fa-check"></i> <%= post.name %></a>
+<!-- /.link --></section><%= (opts.env == 'tumblr') ? '{/block:Link}' : '' %><% } %><% if (post.type == 'photo') { %><%= (opts.env == 'tumblr') ? '{block:Photo}' : '' %>
+<section class="photo<%= post.tags ? (' ' + post.tags) : '' %>">
+<img src="<%= post.src %>" alt="<%= post.caption %>"/>
+<!-- /.photo --></section><%= (opts.env == 'tumblr') ? '{/block:Photo}' : '' %><% } %><% }) %><%= (opts.env == 'tumblr') ? '{/block:Posts}' : '' %><% } %>

@@ -1,0 +1,46 @@
+var_sample:
+  title:
+    tumblr lp template
+
+  posts:
+    - 
+      type: text
+      body:
+        <p>tumblr lp templateは、tumblrを使って簡単に、あなたのプロダクトの<strong>LP</strong>をつくることができる仕組みです。</p>
+    -
+      type: link
+      name: DOWNLOAD
+      url: http://github.com/fnobi/tumblr-lp-template
+    -
+      type: link
+      name: iOS版
+      url: http://github.com/fnobi/tumblr-lp-template
+      tags: ios
+    -
+      type: link
+      name: Android版
+      url: http://github.com/fnobi/tumblr-lp-template
+      tags: android
+    - 
+      type: photo
+      src: /sample/main.png
+      caption: メイン
+      tags: 'main'
+    - 
+      type: photo
+      src: /sample/capture1.jpg
+      caption: キャプチャ1
+    - 
+      type: photo
+      src: /sample/capture2.jpg
+      caption: キャプチャ2
+    - 
+      type: photo
+      src: /sample/capture3.jpg
+      caption: キャプチャ3
+    - 
+      type: text
+      body:
+        <p>ある程度まとまったテキスト</p>
+        <p>ある程度まとまったテキスト</p>
+        <p>ある程度まとまったテキスト</p>

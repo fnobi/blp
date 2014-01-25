@@ -1,0 +1,39 @@
+<% locals.layout_default = function (buf, opts, content) { %><%
+  var params = ((opts.env == 'tumblr') ? var_tumblr : var_sample);
+  params.env = opts.env;
+%><!DOCTYPE html>
+<html lang="ja">
+<head>
+<% partial_meta(buf, {
+  description: description,
+  keywords: keywords,
+  favicon_url: favicon_url
+}) %>
+<% partial_ios_meta(buf, {
+  viewport: viewport,
+  icon_url: ios_icon_url
+}) %>
+<% partial_ogp(buf, {
+  url: url,
+  title: title,
+  description: description,
+  site_name: title,
+
+  app_id: facebook_app_id,
+  type: ogp_type,
+
+  image_url: ogp_image_url,
+  image_width: ogp_image_width,
+  image_height: ogp_image_height
+}) %>
+<title><%= params.title %></title>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="<%= css_path %>/<%= name %>.css" />
+</head>
+<body>
+<section id="wrapper">
+<% content(buf, params) %>
+<!-- /#wrapper --></section>
+<script src="<%= js_path %>/<%= name %>.js"></script>
+</body>
+</html><% } %>

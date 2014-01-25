@@ -1,0 +1,16 @@
+var_tumblr:
+  title:
+    '{Title}'
+  posts:
+    - 
+      type: text
+      title: '{Title}'
+      body: '{Body}'
+    - 
+      type: link
+      name: '{Name}'
+      url: '{URL}'
+    - 
+      type: photo
+      src: '{PhotoURL-500}'
+      caption: '{PlaintextCaption}'

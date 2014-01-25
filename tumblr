@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<!-- meta -->
+<meta charset="utf-8" />
+<meta name="description" content="lp" />
+
+<!-- ios meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+<!-- ogp -->
+<meta property="og:url" content="http://lp-template.tumblr.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="lp" />
+<meta property="og:site_name" content="lp" />
+<meta property="og:description" content="lp" />
+<meta property="og:locale" content="ja_JP" />
+<title>{Title}</title>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/lp.css" />
+</head>
+<body>
+<section id="wrapper">
+
+
+<h1>{Title}</h1>{block:Posts}{block:Text}
+<section class="text">
+{Body}
+<!-- /.text --></section>{/block:Text}{block:Link}
+<section class="link">
+<a href="{URL}" target="_blank"><i class="fa fa-check"></i> {Name}</a>
+<!-- /.link --></section>{/block:Link}{block:Photo}
+<section class="photo">
+<img src="{PhotoURL-500}" alt="{PlaintextCaption}"/>
+<!-- /.photo --></section>{/block:Photo}{/block:Posts}
+<!-- /#wrapper --></section>
+<script src="/js/lp.js"></script>
+</body>
+</html>
