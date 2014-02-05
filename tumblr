@@ -14,7 +14,7 @@
 <!-- ogp -->
 <meta property="og:url" content="http://bakusoku-lp-kit.tumblr.com/" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="bakusoku lp kit" />
+<meta property="og:title" content="{Title}" />
 <meta property="og:site_name" content="{Title}" />
 <meta property="og:description" content="{Description}" />
 <meta property="og:locale" content="ja_JP" />
