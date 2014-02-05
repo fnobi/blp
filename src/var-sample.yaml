@@ -1,12 +1,12 @@
 var_sample:
   title:
-    tumblr lp template
+    bakusoku lp kit
 
   posts:
     - 
       type: text
       body:
-        <p>tumblr lp templateは、tumblrを使って簡単に、あなたのプロダクトの<strong>LP</strong>をつくることができる仕組みです。</p>
+        <p>bakusoku lp kitは、tumblrを使って簡単に、あなたのプロダクトの<strong>LP</strong>をつくることができる仕組みです。</p>
     -
       type: link
       name: DOWNLOAD
@@ -21,6 +21,11 @@ var_sample:
       name: Android版
       url: http://github.com/fnobi/tumblr-lp-template
       tags: android
+    - 
+      type: link
+      name: github
+      url: https://raw2.github.com/fnobi/tumblr-lp-template/master/tumblr
+      tags: github
     - 
       type: photo
       src: /sample/main.png

@@ -1,16 +1,16 @@
 name: lp
 
 url:
-  http://lp-template.tumblr.com/
+  http://bakusoku-lp-kit.tumblr.com/
 
 repository:
-  git://github.com/nobii/tumblr-lp-template.git
+  git://github.com/fnobi/blp.git
 
 title:
-  lp
+  bakusoku lp kit
 
 description:
-  lp
+  smart landing page kit with Tumblr.
 
 keywords: []
 

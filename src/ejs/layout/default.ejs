@@ -27,13 +27,19 @@
   image_height: ogp_image_height
 }) %>
 <title><%= params.title %></title>
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="<%= css_path %>/<%= name %>.css" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"><% if (opts.env == 'tumblr') { %>
+<style>
+<% include ../../../css/lp.css %>
+</style><% } else { %>
+<link rel="stylesheet" href="<%= css_path %>/<%= name %>.css" /><% } %>
 </head>
 <body>
 <section id="wrapper">
 <% content(buf, params) %>
-<!-- /#wrapper --></section>
-<script src="<%= js_path %>/<%= name %>.js"></script>
+<!-- /#wrapper --></section><% if (opts.env == 'tumblr') { %>
+<script>
+<% include ../../../js/lp.js %>
+</script><% } else { %>
+<script src="<%= js_path %>/<%= name %>.js"></script><% } %>
 </body>
 </html><% } %>

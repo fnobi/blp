@@ -14,4 +14,9 @@ $(function () {
     if ($android.length) {
         $android.find('i').attr('class', 'fa fa-android');
     }
+
+    var $github = $('.link.github');
+    if ($github.length) {
+        $github.find('i').attr('class', 'fa fa-github');
+    }
 });

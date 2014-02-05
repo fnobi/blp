@@ -1,4 +1,4 @@
-tumblr-lp-template
+blp (Bakusoku LP kit)
 ==================
 
-tumblr lp template
+smart landing page kit with Tumblr.
