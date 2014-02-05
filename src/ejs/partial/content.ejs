@@ -1,6 +1,6 @@
 <% locals.partial_content = function (buf, opts) { %>
 <div class="intro">
-<ul class="intro__cover"><li class="cover" style="background-image: url('sample/img_sample_cover_2.jpg')"><span>BAKUSOKU LP KIT -smart landing page kit with Tumblr-</span></li><li class="cover" style="background-image: url('sample/img_sample_cover_1.jpg')"><span>BAKUSOKU LP KIT -smart landing page kit with Tumblr-</span></li><li class="cover" style="background-image: url('sample/img_sample_cover_3.jpg')"><span>BAKUSOKU LP KIT -smart landing page kit with Tumblr-</span></li></ul>
+<ul class="intro__cover"></ul>
 <ul class="intro__nav">
 <li><a class="nav--prev"><span>prev</span></a></li>
 <li><a class="nav--next"><span>next</span></a></li>
@@ -38,13 +38,13 @@
 Copyright &copy; 面白法人カヤック All Rights Reserved.
 <!-- /.footer --></div>
 <div class="posts"><%= (opts.env == 'tumblr') ? '{block:Posts}' : '' %><% opts.posts.forEach(function (post) { %><% if (post.type == 'text') { %><%= (opts.env == 'tumblr') ? '{block:Text}' : '' %>
-<section class="text<%= post.tags ? (' ' + post.tags) : '' %>">
+<section class="post--text<%= post.tags ? (' ' + post.tags) : '' %>">
 <%- post.body %>
 <!-- /.text --></section><%= (opts.env == 'tumblr') ? '{/block:Text}' : '' %><% } %><% if (post.type == 'link') { %><%= (opts.env == 'tumblr') ? '{block:Link}' : '' %>
-<section class="link<%= post.tags ? (' ' + post.tags) : '' %>">
+<section class="post--link<%= post.tags ? (' ' + post.tags) : '' %>">
 <a href="<%= post.url %>" target="_blank"><i class="fa fa-check"></i> <%= post.name %></a>
 <!-- /.link --></section><%= (opts.env == 'tumblr') ? '{/block:Link}' : '' %><% } %><% if (post.type == 'photo') { %><%= (opts.env == 'tumblr') ? '{block:Photo}' : '' %>
-<section class="photo<%= post.tags ? (' ' + post.tags) : '' %>">
+<section class="post--photo<%= post.tags ? (' ' + post.tags) : '' %>">
 <img src="<%= post.src %>" alt="<%= post.caption %>"/>
 <!-- /.photo --></section><%= (opts.env == 'tumblr') ? '{/block:Photo}' : '' %><% } %><% }) %><%= (opts.env == 'tumblr') ? '{/block:Posts}' : '' %>
 <!-- /.posts --></div><% } %>

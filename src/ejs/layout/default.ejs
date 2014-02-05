@@ -5,7 +5,7 @@
 <html lang="ja">
 <head>
 <% partial_meta(buf, {
-  description: description,
+  description: params.description,
   keywords: keywords,
   favicon_url: favicon_url
 }) %>
@@ -16,8 +16,8 @@
 <% partial_ogp(buf, {
   url: url,
   title: title,
-  description: description,
-  site_name: title,
+  description: params.description,
+  site_name: params.title,
 
   app_id: facebook_app_id,
   type: ogp_type,

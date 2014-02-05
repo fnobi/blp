@@ -4,7 +4,7 @@
 
 <!-- meta -->
 <meta charset="utf-8" />
-<meta name="description" content="smart landing page kit with Tumblr." />
+<meta name="description" content="{Description}" />
 
 <!-- ios meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -15,8 +15,8 @@
 <meta property="og:url" content="http://bakusoku-lp-kit.tumblr.com/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="bakusoku lp kit" />
-<meta property="og:site_name" content="bakusoku lp kit" />
-<meta property="og:description" content="smart landing page kit with Tumblr." />
+<meta property="og:site_name" content="{Title}" />
+<meta property="og:description" content="{Description}" />
 <meta property="og:locale" content="ja_JP" />
 <title>{Title}</title>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -251,9 +251,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .footer {
   height: 70px;
   background-color: #002f2f;
+  line-height: 70px;
+  text-align: center;
+  color: white;
 }
 
-/* line 140, ../src/sass/lp.scss */
+/* line 143, ../src/sass/lp.scss */
 .posts {
   display: none;
 }
@@ -273,7 +276,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 
 <div class="intro">
-<ul class="intro__cover"><li class="cover" style="background-image: url('sample/img_sample_cover_2.jpg')"><span>BAKUSOKU LP KIT -smart landing page kit with Tumblr-</span></li><li class="cover" style="background-image: url('sample/img_sample_cover_1.jpg')"><span>BAKUSOKU LP KIT -smart landing page kit with Tumblr-</span></li><li class="cover" style="background-image: url('sample/img_sample_cover_3.jpg')"><span>BAKUSOKU LP KIT -smart landing page kit with Tumblr-</span></li></ul>
+<ul class="intro__cover"></ul>
 <ul class="intro__nav">
 <li><a class="nav--prev"><span>prev</span></a></li>
 <li><a class="nav--next"><span>next</span></a></li>
@@ -311,13 +314,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 Copyright &copy; 面白法人カヤック All Rights Reserved.
 <!-- /.footer --></div>
 <div class="posts">{block:Posts}{block:Text}
-<section class="text">
+<section class="post--text">
 {Body}
 <!-- /.text --></section>{/block:Text}{block:Link}
-<section class="link">
+<section class="post--link">
 <a href="{URL}" target="_blank"><i class="fa fa-check"></i> {Name}</a>
 <!-- /.link --></section>{/block:Link}{block:Photo}
-<section class="photo">
+<section class="post--photo">
 <img src="{PhotoURL-500}" alt="{PlaintextCaption}"/>
 <!-- /.photo --></section>{/block:Photo}{/block:Posts}
 <!-- /.posts --></div>
@@ -9436,6 +9439,31 @@ return jQuery;
 }));
 
 $(function () {
+    // intro
+    (function () {
+        var $introCover = $('.intro__cover');
+        var $covers = $('.post--photo.cover');
+
+        if (!$covers.length) {
+            $('.intro').hide();
+            return;
+        }
+
+        $covers.each(function () {
+            var $post = $(this);
+            var $li = $('<li />');
+
+            var $img = $post.find('img');
+
+            $li.addClass('cover');
+            $li.css({
+                backgroundImage: 'url(' + $img.attr('src') + ')'
+            });
+            $li.append('<span>' + $img.attr('alt') + '</span>');
+            $introCover.append($li);
+        });
+    })();
+
     return;
 
     var $main = $('.photo.main, .video.main');

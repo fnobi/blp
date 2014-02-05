@@ -1,6 +1,10 @@
 var_tumblr:
   title:
     '{Title}'
+
+  description:
+    '{Description}'
+
   posts:
     - 
       type: text

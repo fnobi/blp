@@ -1,4 +1,29 @@
 $(function () {
+    // intro
+    (function () {
+        var $introCover = $('.intro__cover');
+        var $covers = $('.post--photo.cover');
+
+        if (!$covers.length) {
+            $('.intro').hide();
+            return;
+        }
+
+        $covers.each(function () {
+            var $post = $(this);
+            var $li = $('<li />');
+
+            var $img = $post.find('img');
+
+            $li.addClass('cover');
+            $li.css({
+                backgroundImage: 'url(' + $img.attr('src') + ')'
+            });
+            $li.append('<span>' + $img.attr('alt') + '</span>');
+            $introCover.append($li);
+        });
+    })();
+
     return;
 
     var $main = $('.photo.main, .video.main');

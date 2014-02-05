@@ -2,7 +2,27 @@ var_sample:
   title:
     bakusoku lp kit
 
+  description:
+    smart landing page kit with Tumblr.
+
   posts:
+    -
+      type: photo
+      src: sample/img_sample_cover_2.jpg
+      caption: BAKUSOKU LP KIT -smart landing page kit with Tumblr-
+      tags: 'cover'
+    -
+      type: photo
+      src: sample/img_sample_cover_1.jpg
+      caption: BAKUSOKU LP KIT -smart landing page kit with Tumblr-
+      tags: 'cover'
+    -
+      type: photo
+      src: sample/img_sample_cover_3.jpg
+      caption: BAKUSOKU LP KIT -smart landing page kit with Tumblr-
+      tags: 'cover'
+
+
     - 
       type: text
       body:
