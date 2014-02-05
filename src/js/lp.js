@@ -1,4 +1,6 @@
 $(function () {
+    return;
+
     var $main = $('.photo.main, .video.main');
     if ($main.length) {
         $main.remove();

@@ -1,39 +1,145 @@
 @import "compass";
 @import "compass/reset";
 
+$content_width: 980px;
+$cover_height: 650px;
+$nav_size: 76px;
+
 #wrapper {
-    width: 640px;
     margin: auto;
     font-family: sans-serif;
 }
 
-h1 {
-    text-align: center;
-    margin: 20px 0px;
-    font-size: 25px;
-    font-weight: bold;
+.intro, .movie, .howtouse, .download, .footer {
+    min-width: $content_width;
 }
 
-.photo {
+.intro {
+    overflow: hidden;
+    text-align: center;
+}
+
+.intro__cover {
+    height: $cover_height;
+    width: 300%;
+    margin-left: -100%;
+
+    @include background-size(cover);
+
+    span {
+        display: none;
+    }
+}
+
+.cover {
+    display: inline-block;
+    width: $content_width;
+    height: $cover_height;
+}
+
+.nav--prev, .nav--next {
+    position: absolute;
+    display: block;
+    width: $nav_size;
+    height: $nav_size;
+
+    top: $cover_height / 2;
+    margin-top: (-$nav_size / 2);
+
+    left: 50%;
+
+    span {
+        display: none;
+    }
+}
+
+.nav--prev {
+    margin-left: -$content_width / 2 - $nav_size / 2;
+}
+.nav--next {
+    margin-left: $content_width / 2 - $nav_size / 2;
+}
+
+.movie {
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    padding: 70px 0px;
+}
+
+.movie__title {
+    margin-bottom: 65px;
     img {
         display: block;
         margin: auto;
-        max-width: 100%;
     }
 }
 
-.text {
-    strong {
-        font-weight: bold;
-    }
+.howtouse {
+    background-color: #e6e2af;
+    position: relative;
+    min-height: 700px;
+
+    color: #002f2f;
+    font-size: 17px;
+    line-height: 27px; 
 }
 
-.link {
-    text-align: center;
-    font-size: 20px;
+.howtouse__left {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin-right: 110px;
+    @include translate(0%, -50%);
+}
+
+.howtouse__right {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include translate(0%, -50%);
+}
+
+.howtouse__title {
     margin: 10px 0px;
+}
 
-    a {
-        text-decoration: none;
-    }
+.download {
+    background-color: #046380;
+    position: relative;
+    min-height: 700px;
+
+    font-size: 17px;
+    line-height: 27px; 
+}
+
+.download__left {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    @include translate(0%, -50%);
+}
+
+.download__right {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 110px;
+    @include translate(0%, -50%);
+}
+
+.download__title {
+    margin: 10px 0px;
+}
+
+.footer {
+    height: 70px;
+    background-color: #002f2f;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+}
+
+.posts {
+    display: none;
 }

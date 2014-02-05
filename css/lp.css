@@ -63,40 +63,177 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 4, ../src/sass/lp.scss */
+/* line 8, ../src/sass/lp.scss */
 #wrapper {
-  width: 640px;
   margin: auto;
   font-family: sans-serif;
 }
 
-/* line 10, ../src/sass/lp.scss */
-h1 {
-  text-align: center;
-  margin: 20px 0px;
-  font-size: 25px;
-  font-weight: bold;
+/* line 13, ../src/sass/lp.scss */
+.intro, .movie, .howtouse, .download, .footer {
+  min-width: 980px;
 }
 
-/* line 18, ../src/sass/lp.scss */
-.photo img {
+/* line 17, ../src/sass/lp.scss */
+.intro {
+  overflow: hidden;
+  text-align: center;
+}
+
+/* line 22, ../src/sass/lp.scss */
+.intro__cover {
+  height: 650px;
+  width: 300%;
+  margin-left: -100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 29, ../src/sass/lp.scss */
+.intro__cover span {
+  display: none;
+}
+
+/* line 34, ../src/sass/lp.scss */
+.cover {
+  display: inline-block;
+  width: 980px;
+  height: 650px;
+}
+
+/* line 40, ../src/sass/lp.scss */
+.nav--prev, .nav--next {
+  position: absolute;
+  display: block;
+  width: 76px;
+  height: 76px;
+  top: 325px;
+  margin-top: -38px;
+  left: 50%;
+}
+/* line 51, ../src/sass/lp.scss */
+.nav--prev span, .nav--next span {
+  display: none;
+}
+
+/* line 56, ../src/sass/lp.scss */
+.nav--prev {
+  margin-left: -528px;
+}
+
+/* line 59, ../src/sass/lp.scss */
+.nav--next {
+  margin-left: 452px;
+}
+
+/* line 63, ../src/sass/lp.scss */
+.movie {
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+  padding: 70px 0px;
+}
+
+/* line 70, ../src/sass/lp.scss */
+.movie__title {
+  margin-bottom: 65px;
+}
+/* line 72, ../src/sass/lp.scss */
+.movie__title img {
   display: block;
   margin: auto;
-  max-width: 100%;
 }
 
-/* line 26, ../src/sass/lp.scss */
-.text strong {
-  font-weight: bold;
+/* line 78, ../src/sass/lp.scss */
+.howtouse {
+  background-color: #e6e2af;
+  position: relative;
+  min-height: 700px;
+  color: #002f2f;
+  font-size: 17px;
+  line-height: 27px;
 }
 
-/* line 31, ../src/sass/lp.scss */
-.link {
-  text-align: center;
-  font-size: 20px;
+/* line 88, ../src/sass/lp.scss */
+.howtouse__left {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  margin-right: 110px;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+
+/* line 96, ../src/sass/lp.scss */
+.howtouse__right {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+
+/* line 103, ../src/sass/lp.scss */
+.howtouse__title {
   margin: 10px 0px;
 }
-/* line 36, ../src/sass/lp.scss */
-.link a {
-  text-decoration: none;
+
+/* line 107, ../src/sass/lp.scss */
+.download {
+  background-color: #046380;
+  position: relative;
+  min-height: 700px;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+/* line 116, ../src/sass/lp.scss */
+.download__left {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+
+/* line 123, ../src/sass/lp.scss */
+.download__right {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 110px;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+
+/* line 131, ../src/sass/lp.scss */
+.download__title {
+  margin: 10px 0px;
+}
+
+/* line 135, ../src/sass/lp.scss */
+.footer {
+  height: 70px;
+  background-color: #002f2f;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+}
+
+/* line 143, ../src/sass/lp.scss */
+.posts {
+  display: none;
 }
