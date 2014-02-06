@@ -262,14 +262,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 </style>
-<style>
-.nav--prev {
-  background-image: url('http://blp-preview.fnobi.com/sample/ico_prev.png');
-}
-.nav--next {
-  background-image: url('http://blp-preview.fnobi.com/sample/ico_next.png');
-}
-</style>
 </head>
 <body>
 <section id="wrapper">
@@ -278,8 +270,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 <div class="intro">
 <ul class="intro__cover"></ul>
 <ul class="intro__nav">
-<li><a class="nav--prev"><span>prev</span></a></li>
-<li><a class="nav--next"><span>next</span></a></li>
+<li><a class="nav--prev"><img src="http://blp-preview.fnobi.com/sample/ico_prev.png" alt="prev"/></a></li>
+<li><a class="nav--next"><img src="http://blp-preview.fnobi.com/sample/ico_next.png" alt="next"/></a></li>
 <!-- /.intro__nav --></ul>
 <!-- /.intro --></div>
 <div class="movie">

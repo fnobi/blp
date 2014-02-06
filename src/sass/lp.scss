@@ -3,7 +3,6 @@
 
 $content_width: 980px;
 $cover_height: 650px;
-$nav_size: 76px;
 
 #wrapper {
     margin: auto;
@@ -39,13 +38,13 @@ $nav_size: 76px;
 .nav--prev, .nav--next {
     position: absolute;
     display: block;
-    width: $nav_size;
-    height: $nav_size;
 
     top: $cover_height / 2;
-    margin-top: (-$nav_size / 2);
+    @include translate(-50%, -50%);
 
     left: 50%;
+
+    cursor: pointer;
 
     span {
         display: none;
@@ -53,10 +52,10 @@ $nav_size: 76px;
 }
 
 .nav--prev {
-    margin-left: -$content_width / 2 - $nav_size / 2;
+    margin-left: -$content_width / 2;
 }
 .nav--next {
-    margin-left: $content_width / 2 - $nav_size / 2;
+    margin-left: $content_width / 2;
 }
 
 .movie {

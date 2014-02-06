@@ -63,35 +63,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, ../src/sass/lp.scss */
+/* line 7, ../src/sass/lp.scss */
 #wrapper {
   margin: auto;
   font-family: sans-serif;
 }
 
-/* line 13, ../src/sass/lp.scss */
+/* line 12, ../src/sass/lp.scss */
 .intro, .movie, .howtouse, .download, .footer {
   min-width: 980px;
 }
 
-/* line 17, ../src/sass/lp.scss */
+/* line 16, ../src/sass/lp.scss */
 .intro {
   overflow: hidden;
   text-align: center;
 }
 
-/* line 22, ../src/sass/lp.scss */
+/* line 21, ../src/sass/lp.scss */
 .intro__cover {
   height: 650px;
   width: 300%;
   margin-left: -100%;
 }
-/* line 27, ../src/sass/lp.scss */
+/* line 26, ../src/sass/lp.scss */
 .intro__cover span {
   display: none;
 }
 
-/* line 32, ../src/sass/lp.scss */
+/* line 31, ../src/sass/lp.scss */
 .cover {
   display: inline-block;
   width: 980px;
@@ -102,32 +102,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-size: cover;
 }
 
-/* line 39, ../src/sass/lp.scss */
+/* line 38, ../src/sass/lp.scss */
 .nav--prev, .nav--next {
   position: absolute;
   display: block;
-  width: 76px;
-  height: 76px;
   top: 325px;
-  margin-top: -38px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   left: 50%;
+  cursor: pointer;
 }
-/* line 50, ../src/sass/lp.scss */
+/* line 49, ../src/sass/lp.scss */
 .nav--prev span, .nav--next span {
   display: none;
 }
 
-/* line 55, ../src/sass/lp.scss */
+/* line 54, ../src/sass/lp.scss */
 .nav--prev {
-  margin-left: -528px;
+  margin-left: -490px;
 }
 
-/* line 58, ../src/sass/lp.scss */
+/* line 57, ../src/sass/lp.scss */
 .nav--next {
-  margin-left: 452px;
+  margin-left: 490px;
 }
 
-/* line 62, ../src/sass/lp.scss */
+/* line 61, ../src/sass/lp.scss */
 .movie {
   background-color: white;
   text-align: center;
@@ -135,17 +138,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 70px 0px;
 }
 
-/* line 69, ../src/sass/lp.scss */
+/* line 68, ../src/sass/lp.scss */
 .movie__title {
   margin-bottom: 65px;
 }
-/* line 71, ../src/sass/lp.scss */
+/* line 70, ../src/sass/lp.scss */
 .movie__title img {
   display: block;
   margin: auto;
 }
 
-/* line 77, ../src/sass/lp.scss */
+/* line 76, ../src/sass/lp.scss */
 .howtouse {
   background-color: #e6e2af;
   position: relative;
@@ -155,7 +158,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 27px;
 }
 
-/* line 87, ../src/sass/lp.scss */
+/* line 86, ../src/sass/lp.scss */
 .howtouse__left {
   position: absolute;
   right: 50%;
@@ -168,7 +171,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 95, ../src/sass/lp.scss */
+/* line 94, ../src/sass/lp.scss */
 .howtouse__right {
   position: absolute;
   left: 50%;
@@ -180,12 +183,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 102, ../src/sass/lp.scss */
+/* line 101, ../src/sass/lp.scss */
 .howtouse__title {
   margin: 10px 0px;
 }
 
-/* line 106, ../src/sass/lp.scss */
+/* line 105, ../src/sass/lp.scss */
 .download {
   background-color: #046380;
   position: relative;
@@ -194,7 +197,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 27px;
 }
 
-/* line 115, ../src/sass/lp.scss */
+/* line 114, ../src/sass/lp.scss */
 .download__left {
   position: absolute;
   right: 50%;
@@ -206,7 +209,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 122, ../src/sass/lp.scss */
+/* line 121, ../src/sass/lp.scss */
 .download__right {
   position: absolute;
   left: 50%;
@@ -219,12 +222,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 130, ../src/sass/lp.scss */
+/* line 129, ../src/sass/lp.scss */
 .download__title {
   margin: 10px 0px;
 }
 
-/* line 134, ../src/sass/lp.scss */
+/* line 133, ../src/sass/lp.scss */
 .footer {
   height: 70px;
   background-color: #002f2f;
@@ -233,7 +236,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
 }
 
-/* line 142, ../src/sass/lp.scss */
+/* line 141, ../src/sass/lp.scss */
 .posts {
   display: none;
 }
