@@ -1,3 +1,51 @@
+function Covers (opts) {
+    this.$el = opts.$el;
+    this.$prev = opts.$prev;
+    this.$next = opts.$next;
+
+    this.count = this.$el.children().length;
+    
+    this.updateCSS();
+    this.initListeners();
+}
+
+Covers.prototype.updateCSS = function () {
+    var $el = this.$el;
+    var count = this.count;
+
+    $el.css({
+        width: (count * 100) + '%',
+        marginLeft: (-(Math.ceil(count / 2) - 1) * 100) + '%'
+    });
+};
+
+Covers.prototype.initListeners = function () {
+    var self = this;
+    var $prev = this.$prev;
+    var $next = this.$next;
+
+    $prev.on('click', function () {
+        self.shiftRight();
+    });
+
+    $next.on('click', function () {
+        self.shiftLeft();
+    });
+};
+
+Covers.prototype.shiftLeft = function () {
+    var $el = this.$el;
+    var $children = $el.children();
+    $el.append($children.get(0));
+};
+
+Covers.prototype.shiftRight = function () {
+    var $el = this.$el;
+    var $children = $el.children();
+    var count = this.count;
+    $el.prepend($children.get(count - 1));
+};
+
 $(function () {
     // intro
     (function () {
@@ -21,6 +69,12 @@ $(function () {
             });
             $li.append('<span>' + $img.attr('alt') + '</span>');
             $introCover.append($li);
+        });
+
+        new Covers({
+            $el: $introCover,
+            $prev: $('.nav--prev'),
+            $next: $('.nav--next')
         });
     })();
 
