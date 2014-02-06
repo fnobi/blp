@@ -5,6 +5,9 @@ var_sample:
   description:
     smart landing page kit with Tumblr.
 
+  textCopyright:
+    面白法人カヤック
+
   posts:
     -
       type: photo

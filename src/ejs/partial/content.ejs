@@ -26,7 +26,7 @@
 <div class="download__left"></div>
 <!-- /.download --></div>
 <div class="footer">
-Copyright &copy; 面白法人カヤック All Rights Reserved.
+Copyright &copy; <%= opts.textCopyright %> All Rights Reserved.
 <!-- /.footer --></div>
 <div class="posts"><%= (opts.env == 'tumblr') ? '{block:Posts}' : '' %><% opts.posts.forEach(function (post) { %><% if (post.type == 'text') { %><%= (opts.env == 'tumblr') ? '{block:Text}' : '' %>
 <section class="post--text<%= post.tags ? (' ' + post.tags) : '' %>">

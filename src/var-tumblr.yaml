@@ -5,6 +5,9 @@ var_tumblr:
   description:
     '{Description}'
 
+  textCopyright:
+    '{text:Copyright}'
+
   posts:
     - 
       type: text
