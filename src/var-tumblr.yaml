@@ -18,7 +18,7 @@ var_tumblr:
       tags: '{block:Tags}{Tag} {/block:Tags}'
     - 
       type: photo
-      src: '{PhotoURL-500}'
+      src: '{PhotoURL-HighRes}'
       plaintextCaption: '{PlaintextCaption}'
       caption: '{Caption}'
       tags: '{block:Tags}{Tag} {/block:Tags}'

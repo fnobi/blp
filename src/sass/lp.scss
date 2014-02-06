@@ -24,8 +24,6 @@ $nav_size: 76px;
     width: 300%;
     margin-left: -100%;
 
-    @include background-size(cover);
-
     span {
         display: none;
     }
@@ -35,6 +33,7 @@ $nav_size: 76px;
     display: inline-block;
     width: $content_width;
     height: $cover_height;
+    @include background-size(cover);
 }
 
 .nav--prev, .nav--next {

@@ -85,24 +85,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 650px;
   width: 300%;
   margin-left: -100%;
+}
+/* line 27, ../src/sass/lp.scss */
+.intro__cover span {
+  display: none;
+}
+
+/* line 32, ../src/sass/lp.scss */
+.cover {
+  display: inline-block;
+  width: 980px;
+  height: 650px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 29, ../src/sass/lp.scss */
-.intro__cover span {
-  display: none;
-}
 
-/* line 34, ../src/sass/lp.scss */
-.cover {
-  display: inline-block;
-  width: 980px;
-  height: 650px;
-}
-
-/* line 40, ../src/sass/lp.scss */
+/* line 39, ../src/sass/lp.scss */
 .nav--prev, .nav--next {
   position: absolute;
   display: block;
@@ -112,22 +112,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: -38px;
   left: 50%;
 }
-/* line 51, ../src/sass/lp.scss */
+/* line 50, ../src/sass/lp.scss */
 .nav--prev span, .nav--next span {
   display: none;
 }
 
-/* line 56, ../src/sass/lp.scss */
+/* line 55, ../src/sass/lp.scss */
 .nav--prev {
   margin-left: -528px;
 }
 
-/* line 59, ../src/sass/lp.scss */
+/* line 58, ../src/sass/lp.scss */
 .nav--next {
   margin-left: 452px;
 }
 
-/* line 63, ../src/sass/lp.scss */
+/* line 62, ../src/sass/lp.scss */
 .movie {
   background-color: white;
   text-align: center;
@@ -135,17 +135,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 70px 0px;
 }
 
-/* line 70, ../src/sass/lp.scss */
+/* line 69, ../src/sass/lp.scss */
 .movie__title {
   margin-bottom: 65px;
 }
-/* line 72, ../src/sass/lp.scss */
+/* line 71, ../src/sass/lp.scss */
 .movie__title img {
   display: block;
   margin: auto;
 }
 
-/* line 78, ../src/sass/lp.scss */
+/* line 77, ../src/sass/lp.scss */
 .howtouse {
   background-color: #e6e2af;
   position: relative;
@@ -155,7 +155,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 27px;
 }
 
-/* line 88, ../src/sass/lp.scss */
+/* line 87, ../src/sass/lp.scss */
 .howtouse__left {
   position: absolute;
   right: 50%;
@@ -168,7 +168,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 96, ../src/sass/lp.scss */
+/* line 95, ../src/sass/lp.scss */
 .howtouse__right {
   position: absolute;
   left: 50%;
@@ -180,12 +180,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 103, ../src/sass/lp.scss */
+/* line 102, ../src/sass/lp.scss */
 .howtouse__title {
   margin: 10px 0px;
 }
 
-/* line 107, ../src/sass/lp.scss */
+/* line 106, ../src/sass/lp.scss */
 .download {
   background-color: #046380;
   position: relative;
@@ -194,7 +194,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 27px;
 }
 
-/* line 116, ../src/sass/lp.scss */
+/* line 115, ../src/sass/lp.scss */
 .download__left {
   position: absolute;
   right: 50%;
@@ -206,7 +206,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 123, ../src/sass/lp.scss */
+/* line 122, ../src/sass/lp.scss */
 .download__right {
   position: absolute;
   left: 50%;
@@ -219,12 +219,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 131, ../src/sass/lp.scss */
+/* line 130, ../src/sass/lp.scss */
 .download__title {
   margin: 10px 0px;
 }
 
-/* line 135, ../src/sass/lp.scss */
+/* line 134, ../src/sass/lp.scss */
 .footer {
   height: 70px;
   background-color: #002f2f;
@@ -233,7 +233,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
 }
 
-/* line 143, ../src/sass/lp.scss */
+/* line 142, ../src/sass/lp.scss */
 .posts {
   display: none;
 }
