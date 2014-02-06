@@ -305,19 +305,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 Copyright &copy; 面白法人カヤック All Rights Reserved.
 <!-- /.footer --></div>
 <div class="posts">{block:Posts}{block:Text}
-<section class="post--text">
+<section class="post--text {block:Tags}{Tag} {/block:Tags}">
 {Body}
 <!-- /.post--text --></section>{/block:Text}{block:Link}
-<section class="post--link">
+<section class="post--link {block:Tags}{Tag} {/block:Tags}">
 <a href="{URL}" target="_blank">{Name}</a>
 <!-- /.post--link --></section>{/block:Link}{block:Photo}
-<section class="post--photo">
+<section class="post--photo {block:Tags}{Tag} {/block:Tags}">
 <img src="{PhotoURL-500}" alt="{PlaintextCaption}"/>
 <div class="post__caption">
 {Caption}
 <!-- .post__caption --></div>
 <!-- /.post--photo --></section>{/block:Photo}{block:Video}
-<section class="post--video">
+<section class="post--video {block:Tags}{Tag} {/block:Tags}">
 {Video-700}
 <!-- /.post--video --></section>{/block:Video}{/block:Posts}
 <!-- /.posts --></div>
