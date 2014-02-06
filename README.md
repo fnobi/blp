@@ -27,3 +27,11 @@ smart landing page kit with Tumblr.
 ### ダウンロード
  - ```download``` タグを付けた画像投稿をすると、ダウンロードのセクションに画像が入ります。
  - ```download``` タグを付けたリンク投稿をすると、ダウンロードのセクションに追加できます。(リンクタイトルも反映されます)
+
+## 更新予定
+
+ - [issues](https://github.com/fnobi/blp/issues)を参照。
+
+## ご意見・ご要望
+
+ - こちらも[issues](https://github.com/fnobi/blp/issues)まで。
