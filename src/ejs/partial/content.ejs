@@ -8,31 +8,22 @@
 <!-- /.intro --></div>
 <div class="movie">
 <h1 class="movie__title"><img src="sample/ttl_movie.png" alt="MOVIE" /></h1>
-<iframe width="770" height="460" src="//www.youtube.com/embed/Facvl0v9Unc" frameborder="0" allowfullscreen></iframe>
 <!-- /.movie --></div>
 <div class="howtouse">
 <div class="howtouse__left">
 <h1 class="howtouse__title"><img src="sample/ttl_howtouse.png" alt="How to Use" /></h1>
-<p>タンブラーを解説する<br />
-テーマを適用する<br />
-画像を投稿する<br />
-完成!</p>
 <!-- /.howtouse__left --></div>
-<div class="howtouse__right">
-<img src="sample/img_sample_tumblr.png" alt=""/>
-<!-- /.howtouse__right --></div>
+<div class="howtouse__right"></div>
 <!-- /.howtouse --></div>
 <div class="download">
 <div class="download__right">
 <h1 class="download__title"><img src="sample/ttl_download.png" alt="DOWNLOAD" /></h1>
 <ul>
-<li><a class="download__link--appstore" href="#"><img src="sample/btn_appstore.png" alt="App Store" /></a></li>
-<li><a class="download__link--googleplay" href="#"><img src="sample/btn_googleplay.png" alt="Google play" /></a></li>
+<!-- <li><a class="download__link--appstore" href="#"><img src="sample/btn_appstore.png" alt="App Store" /></a></li> -->
+<!-- <li><a class="download__link--googleplay" href="#"><img src="sample/btn_googleplay.png" alt="Google play" /></a></li> -->
 </ul>
 <!-- /.download__right --></div>
-<div class="download__left">
-<img src="sample/img_sample_tumblr.png" alt=""/>
-<!-- /.download__left --></div>
+<div class="download__left"></div>
 <!-- /.download --></div>
 <div class="footer">
 Copyright &copy; 面白法人カヤック All Rights Reserved.
@@ -40,11 +31,17 @@ Copyright &copy; 面白法人カヤック All Rights Reserved.
 <div class="posts"><%= (opts.env == 'tumblr') ? '{block:Posts}' : '' %><% opts.posts.forEach(function (post) { %><% if (post.type == 'text') { %><%= (opts.env == 'tumblr') ? '{block:Text}' : '' %>
 <section class="post--text<%= post.tags ? (' ' + post.tags) : '' %>">
 <%- post.body %>
-<!-- /.text --></section><%= (opts.env == 'tumblr') ? '{/block:Text}' : '' %><% } %><% if (post.type == 'link') { %><%= (opts.env == 'tumblr') ? '{block:Link}' : '' %>
+<!-- /.post--text --></section><%= (opts.env == 'tumblr') ? '{/block:Text}' : '' %><% } %><% if (post.type == 'link') { %><%= (opts.env == 'tumblr') ? '{block:Link}' : '' %>
 <section class="post--link<%= post.tags ? (' ' + post.tags) : '' %>">
-<a href="<%= post.url %>" target="_blank"><i class="fa fa-check"></i> <%= post.name %></a>
-<!-- /.link --></section><%= (opts.env == 'tumblr') ? '{/block:Link}' : '' %><% } %><% if (post.type == 'photo') { %><%= (opts.env == 'tumblr') ? '{block:Photo}' : '' %>
+<a href="<%= post.url %>" target="_blank"><%= post.name %></a>
+<!-- /.post--link --></section><%= (opts.env == 'tumblr') ? '{/block:Link}' : '' %><% } %><% if (post.type == 'photo') { %><%= (opts.env == 'tumblr') ? '{block:Photo}' : '' %>
 <section class="post--photo<%= post.tags ? (' ' + post.tags) : '' %>">
-<img src="<%= post.src %>" alt="<%= post.caption %>"/>
-<!-- /.photo --></section><%= (opts.env == 'tumblr') ? '{/block:Photo}' : '' %><% } %><% }) %><%= (opts.env == 'tumblr') ? '{/block:Posts}' : '' %>
+<img src="<%= post.src %>" alt="<%= post.plaintextCaption %>"/>
+<div class="post__caption">
+<%- post.caption %>
+<!-- .post__caption --></div>
+<!-- /.post--photo --></section><%= (opts.env == 'tumblr') ? '{/block:Photo}' : '' %><% } %><% if (post.type == 'video') { %><%= (opts.env == 'tumblr') ? '{block:Video}' : '' %>
+<section class="post--video<%= post.tags ? (' ' + post.tags) : '' %>">
+<%- post.video %>
+<!-- /.post--video --></section><%= (opts.env == 'tumblr') ? '{/block:Video}' : '' %><% } %><% }) %><%= (opts.env == 'tumblr') ? '{/block:Posts}' : '' %>
 <!-- /.posts --></div><% } %>

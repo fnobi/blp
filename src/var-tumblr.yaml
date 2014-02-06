@@ -17,4 +17,9 @@ var_tumblr:
     - 
       type: photo
       src: '{PhotoURL-500}'
+      plaintextCaption: '{PlaintextCaption}'
+      caption: '{Caption}'
+    - 
+      type: video
+      video: '{Video-700}'
       caption: '{PlaintextCaption}'

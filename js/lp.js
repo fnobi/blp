@@ -9136,26 +9136,41 @@ $(function () {
         });
     })();
 
-    return;
+    // movie
+    (function () {
+        var $movie = $('.movie');
+        var video = $('.post--video.movie iframe').get(0);
+        if (!video) {
+            $movie.hide();
+            return;
+        }
+        $movie.append(video);
+    })();
 
-    var $main = $('.photo.main, .video.main');
-    if ($main.length) {
-        $main.remove();
-        $('h1').before($main);
-    }
+    // how to use
+    (function () {
+        var $post = $('.post--photo.howtouse');
+        if (!$post.length) {
+            $('.howtouse').hide();
+            return;
+        }
+        $('.howtouse__left').append($post.find('.post__caption'));;
+        $('.howtouse__right').append($post.find('img'));;
+    })();
 
-    var $ios = $('.link.ios');
-    if ($ios.length) {
-        $ios.find('i').attr('class', 'fa fa-apple');
-    }
+    // download
+    (function () {
+        var $post = $('.post--photo.download');
+        if (!$post.length) {
+            $('.download').hide();
+            return;
+        }
+        $('.download__left').append($post.find('img'));;
 
-    var $android = $('.link.android');
-    if ($android.length) {
-        $android.find('i').attr('class', 'fa fa-android');
-    }
-
-    var $github = $('.link.github');
-    if ($github.length) {
-        $github.find('i').attr('class', 'fa fa-github');
-    }
+        var $ul = $('.download__right ul');
+        $('.post--link.download').each(function () {
+            var $postLink = $(this).find('a');
+            $ul.append('<li><a class="download__link" href="' + $postLink.attr('href') + '">' + $postLink.text() + '</a></li>');
+        });
+    })();
 });
