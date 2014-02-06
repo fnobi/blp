@@ -264,10 +264,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 </style>
 <style>
 .nav--prev {
-  background-image: url('sample/ico_prev.png');
+  background-image: url('http://blp-preview.fnobi.com/sample/ico_prev.png');
 }
 .nav--next {
-  background-image: url('sample/ico_next.png');
+  background-image: url('http://blp-preview.fnobi.com/sample/ico_next.png');
 }
 </style>
 </head>
@@ -283,20 +283,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 <!-- /.intro__nav --></ul>
 <!-- /.intro --></div>
 <div class="movie">
-<h1 class="movie__title"><img src="sample/ttl_movie.png" alt="MOVIE" /></h1>
+<h1 class="movie__title"><img src="http://blp-preview.fnobi.com/sample/ttl_movie.png" alt="MOVIE" /></h1>
 <!-- /.movie --></div>
 <div class="howtouse">
 <div class="howtouse__left">
-<h1 class="howtouse__title"><img src="sample/ttl_howtouse.png" alt="How to Use" /></h1>
+<h1 class="howtouse__title"><img src="http://blp-preview.fnobi.com/sample/ttl_howtouse.png" alt="How to Use" /></h1>
 <!-- /.howtouse__left --></div>
 <div class="howtouse__right"></div>
 <!-- /.howtouse --></div>
 <div class="download">
 <div class="download__right">
-<h1 class="download__title"><img src="sample/ttl_download.png" alt="DOWNLOAD" /></h1>
+<h1 class="download__title"><img src="http://blp-preview.fnobi.com/sample/ttl_download.png" alt="DOWNLOAD" /></h1>
 <ul>
-<!-- <li><a class="download__link--appstore" href="#"><img src="sample/btn_appstore.png" alt="App Store" /></a></li> -->
-<!-- <li><a class="download__link--googleplay" href="#"><img src="sample/btn_googleplay.png" alt="Google play" /></a></li> -->
+<!-- <li><a class="download__link--appstore" href="#"><img src="http://blp-preview.fnobi.com/sample/btn_appstore.png" alt="App Store" /></a></li> -->
+<!-- <li><a class="download__link--googleplay" href="#"><img src="http://blp-preview.fnobi.com/sample/btn_googleplay.png" alt="Google play" /></a></li> -->
 </ul>
 <!-- /.download__right --></div>
 <div class="download__left"></div>

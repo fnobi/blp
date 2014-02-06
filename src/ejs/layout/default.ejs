@@ -1,6 +1,10 @@
 <% locals.layout_default = function (buf, opts, content) { %><%
   var params = ((opts.env == 'tumblr') ? var_tumblr : var_sample);
   params.env = opts.env;
+
+  if (opts.env == 'tumblr') {
+    img_path = 'http://blp-preview.fnobi.com' + img_path;
+  }
 %><!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -34,10 +38,10 @@
 <link rel="stylesheet" href="<%= css_path %>/<%= name %>.css" /><% } %>
 <style>
 .nav--prev {
-  background-image: url('sample/ico_prev.png');
+  background-image: url('<%= img_path %>/ico_prev.png');
 }
 .nav--next {
-  background-image: url('sample/ico_next.png');
+  background-image: url('<%= img_path %>/ico_next.png');
 }
 </style>
 </head>

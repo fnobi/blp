@@ -141,7 +141,7 @@ module.exports = function (grunt) {
                         http_path : env.httpPath,
                         css_path  : path.resolve(env.httpPath, 'css'),
                         js_path   : path.resolve(env.httpPath, 'js' ),
-                        img_path  : path.resolve(env.httpPath, 'img')
+                        img_path  : path.resolve(env.httpPath, 'sample')
                     },
                     'options.yaml',
                     'var-sample.yaml',
