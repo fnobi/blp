@@ -4,21 +4,21 @@ blp (Bakusoku LP kit)
 smart landing page kit with Tumblr.
 
 ## 導入方法
- - Tumblrで新しいブログを作成してください
- - ```カスタマイズ``` → ```HTMLを編集```より、テーマの編集画面に入ってください
- - [https://raw2.github.com/fnobi/blp/master/tumblr](https://raw2.github.com/fnobi/blp/master/tumblr)を丸々コピペしてください
- - 自分の作品の説明や画像を、以下のタグ仕様を参考にしつつ、ぺたぺた追加しましょう
+ - Tumblrで新しいブログを作成してください。
+ - ```カスタマイズ``` → ```HTMLを編集```より、テーマの編集画面に入ってください。
+ - [https://raw2.github.com/fnobi/blp/master/tumblr](https://raw2.github.com/fnobi/blp/master/tumblr)を丸々コピペしてください。
+ - 自分の作品の説明や画像を、以下のタグ仕様を参考にしつつ、ぺたぺた追加しましょう。
  - done!!
 
 ## タグ仕様
 
 ### カバー画像
 
- - ```cover``` タグを付けた画像投稿をすると、カバー画像に追加される
+ - ```cover``` タグを付けた画像投稿をすると、カバー画像に追加されます。
 
 ### ムービー
 
- - ```movie``` タグを付けた動画投稿をすると、ムービーのセクションに埋め込まれる
+ - ```movie``` タグを付けた動画投稿をすると、ムービーのセクションに埋め込まれます。
 
 ### つかいかた
  - ```howtouse``` タグを付けた画像投稿をすると、つかいかたのセクションに画像が入ります。
