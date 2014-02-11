@@ -9525,29 +9525,41 @@ $(function () {
 
     // how to use
     (function () {
-        var $post = $('.post--photo.howtouse');
+        var $post = $('.post--photo, .post--text').filter('.howtouse');
         if (!$post.length) {
             $('.howtouse').hide();
             return;
         }
-        $('.howtouse__left').append($post.find('.post__caption'));;
-        $('.howtouse__right').append($post.find('img'));;
+
+        if ($post.is('.post--photo')) {
+            $('.howtouse__left').append($post.find('.post__body'));
+            $('.howtouse__right').append($post.find('img'));;
+        } else if ($post.is('.post--text')) {
+            $('.howtouse__left').append($post.html());
+        }
     })();
 
     // download
     (function () {
-        var $post = $('.post--photo.download');
-        if (!$post.length) {
+        var $posts = $('.post--photo, .post--link').filter('.download');
+        if (!$posts.length) {
             $('.download').hide();
             return;
         }
-        $('.download__left').append($post.find('img'));;
 
         var $ul = $('.download__right ul');
-        $('.post--link.download').each(function () {
-            var $postLink = $(this).find('a');
-            $ul.append('<li><a class="download__link" href="' + $postLink.attr('href') + '">' + $postLink.text() + '</a></li>');
+
+        $posts.each(function () {
+            var $post = $(this);
+
+            if ($post.is('.post--photo')) {
+                $('.download__left').append($post.find('img'));;
+            } else if ($post.is('.post--link')) {
+                var $postLink = $post.find('a');
+                $ul.append('<li><a class="download__link" href="' + $postLink.attr('href') + '">' + $postLink.text() + '</a></li>');
+            }
         });
+
     })();
 });
 
