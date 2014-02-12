@@ -13,6 +13,7 @@
 
 <!-- ogp -->
 <meta property="og:url" content="http://bakusoku-lp-kit.tumblr.com/" />
+<meta property="og:image" content="{image:OGP}" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{Title}" />
 <meta property="og:site_name" content="{Title}" />
@@ -20,6 +21,7 @@
 <meta property="og:locale" content="ja_JP" />
 <title>{Title}</title>
 <meta name="text:Copyright" content=""/>
+<meta name="image:OGP" content=""/>
 <style>
 /* line 17, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,

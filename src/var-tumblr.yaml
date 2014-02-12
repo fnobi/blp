@@ -8,6 +8,9 @@ var_tumblr:
   textCopyright:
     '{text:Copyright}'
 
+  imageOGP:
+    '{image:OGP}'
+
   posts:
     - 
       type: text

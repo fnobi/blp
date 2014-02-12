@@ -8,6 +8,9 @@ var_sample:
   textCopyright:
     面白法人カヤック
 
+  imageOGP:
+    http://blp-preview.fnobi.com/sample/ogp.jpg
+
   posts:
     -
       type: photo
