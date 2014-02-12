@@ -81,7 +81,7 @@ $(function () {
     // movie
     (function () {
         var $movie = $('.movie');
-        var video = $('.post--video.movie iframe').get(0);
+        var video = $('.post--video iframe').get(0);
         if (!video) {
             $movie.hide();
             return;
