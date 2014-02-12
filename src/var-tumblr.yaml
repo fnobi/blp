@@ -2,8 +2,14 @@ var_tumblr:
   title:
     '{Title}'
 
+  url:
+    '{BlogURL}'
+
   description:
     '{Description}'
+
+  avater:
+    '{PortraitURL-128}'
 
   textCopyright:
     '{text:Copyright}'

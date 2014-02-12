@@ -17,17 +17,15 @@
   viewport: viewport,
   icon_url: ios_icon_url
 }) %>
-<% partial_ogp(buf, {
-  url: url,
-  title: params.title,
-  description: params.description,
-  site_name: params.title,
-
-  app_id: facebook_app_id,
-  type: ogp_type,
-
-  image_url: params.imageOGP
-}) %>
+<!-- ogp -->
+<meta property="og:url" content="<%= params.url %>" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="<%= params.title %>" />
+<meta property="og:site_name" content="<%= params.title %>" />
+<meta property="og:description" content="<%= params.description %>" />
+<meta property="og:image" content="<%= params.imageOGP %>" />
+<meta property="og:image" content="<%= params.avater %>" />
+<meta property="og:locale" content="ja_JP" />
 <title><%= params.title %></title><% if (opts.env == 'tumblr') { %>
 <meta name="text:Copyright" content=""/>
 <meta name="image:OGP" content=""/>

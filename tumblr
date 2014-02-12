@@ -10,14 +10,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta name="apple-mobile-web-app-capable" content="no" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-
 <!-- ogp -->
-<meta property="og:url" content="http://bakusoku-lp-kit.tumblr.com/" />
-<meta property="og:image" content="{image:OGP}" />
+<meta property="og:url" content="{BlogURL}" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{Title}" />
 <meta property="og:site_name" content="{Title}" />
 <meta property="og:description" content="{Description}" />
+<meta property="og:image" content="{image:OGP}" />
+<meta property="og:image" content="{PortraitURL-128}" />
 <meta property="og:locale" content="ja_JP" />
 <title>{Title}</title>
 <meta name="text:Copyright" content=""/>
