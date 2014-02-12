@@ -30,13 +30,20 @@
   image_width: ogp_image_width,
   image_height: ogp_image_height
 }) %>
-<title><%= params.title %></title>
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"><% if (opts.env == 'tumblr') { %>
+<title><%= params.title %></title><% if (opts.env == 'tumblr') { %>
 <meta name="text:Copyright" content=""/>
 <style>
 <% include ../../../css/lp.css %>
 </style><% } else { %>
 <link rel="stylesheet" href="<%= css_path %>/<%= name %>.css" /><% } %>
+<style>
+.download__link--ios {
+  background-image: url('<%= img_path %>/btn_appstore.png');
+}
+.download__link--android {
+  background-image: url('<%= img_path %>/btn_googleplay.png');
+}
+</style>
 </head>
 <body>
 <section id="wrapper">

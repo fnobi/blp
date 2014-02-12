@@ -98,10 +98,13 @@ $(function () {
         }
 
         if ($post.is('.post--photo')) {
-            $('.howtouse__left').append($post.find('.post__body'));
+            $('.howtouse__left').append($post.find('.post__caption'));
             $('.howtouse__right').append($post.find('img'));;
         } else if ($post.is('.post--text')) {
-            $('.howtouse__left').append($post.html());
+            $('.howtouse__left')
+                .attr('class', 'howtouse__center')
+                .append($post.html());
+            $('.howtouse__right').remove();
         }
     })();
 
@@ -122,9 +125,31 @@ $(function () {
                 $('.download__left').append($post.find('img'));;
             } else if ($post.is('.post--link')) {
                 var $postLink = $post.find('a');
-                $ul.append('<li><a class="download__link" href="' + $postLink.attr('href') + '">' + $postLink.text() + '</a></li>');
+                var href = $postLink.attr('href');
+                var className = 'download__link';
+
+                if ($post.is('.ios')) {
+                    className += '--ios';
+                }
+                if ($post.is('.android')) {
+                    className += '--android';
+                }
+
+                $ul.append([
+                    '<li>',
+                    '<a class="' + className + '" href="' + href + '">',
+                    '<span>',
+                    $postLink.text(),
+                    '</span>',
+                    '</a>',
+                    '</li>'
+                ].join(''));
             }
         });
 
+        if (!$('.post--photo.download').length) {
+            $('.download__right').attr('class', 'download__center');
+            $('.download__left').remove();
+        }
     })();
 });

@@ -99,6 +99,13 @@ $cover_height: 650px;
     @include translate(0%, -50%);
 }
 
+.howtouse__center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include translate(-50%, -50%);
+}
+
 .howtouse__title {
     margin: 10px 0px;
 }
@@ -127,8 +134,24 @@ $cover_height: 650px;
     @include translate(0%, -50%);
 }
 
+.download__center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include translate(-50%, -50%);
+}
+
 .download__title {
     margin: 10px 0px;
+}
+
+.download__link--ios, .download__link--android {
+    display: inline-block;
+    width: 190px;
+    height: 62px;
+    span {
+        display: none;
+    }
 }
 
 .footer {

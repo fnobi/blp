@@ -185,11 +185,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 102, ../src/sass/lp.scss */
+.howtouse__center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 109, ../src/sass/lp.scss */
 .howtouse__title {
   margin: 10px 0px;
 }
 
-/* line 106, ../src/sass/lp.scss */
+/* line 113, ../src/sass/lp.scss */
 .download {
   background-color: #046380;
   position: relative;
@@ -198,7 +210,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 27px;
 }
 
-/* line 115, ../src/sass/lp.scss */
+/* line 122, ../src/sass/lp.scss */
 .download__left {
   position: absolute;
   right: 50%;
@@ -210,7 +222,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 122, ../src/sass/lp.scss */
+/* line 129, ../src/sass/lp.scss */
 .download__right {
   position: absolute;
   left: 50%;
@@ -223,12 +235,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 130, ../src/sass/lp.scss */
+/* line 137, ../src/sass/lp.scss */
+.download__center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 144, ../src/sass/lp.scss */
 .download__title {
   margin: 10px 0px;
 }
 
-/* line 134, ../src/sass/lp.scss */
+/* line 148, ../src/sass/lp.scss */
+.download__link--ios, .download__link--android {
+  display: inline-block;
+  width: 190px;
+  height: 62px;
+}
+/* line 152, ../src/sass/lp.scss */
+.download__link--ios span, .download__link--android span {
+  display: none;
+}
+
+/* line 157, ../src/sass/lp.scss */
 .footer {
   height: 70px;
   background-color: #002f2f;
@@ -237,7 +272,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
 }
 
-/* line 142, ../src/sass/lp.scss */
+/* line 165, ../src/sass/lp.scss */
 .posts {
   display: none;
 }
