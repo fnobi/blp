@@ -110,7 +110,7 @@ $(function () {
 
     // download
     (function () {
-        var $posts = $('.post--photo, .post--link').filter('.download');
+        var $posts = $('.post--photo, .post--link, .post--text').filter('.download');
         if (!$posts.length) {
             $('.download').hide();
             return;
@@ -123,6 +123,9 @@ $(function () {
 
             if ($post.is('.post--photo')) {
                 $('.download__left').append($post.find('img'));;
+                $('.download__right').append($post.find('.post__caption'));;
+            } else if ($post.is('.post--text')) {
+                $('.download__right').append($post.html());;
             } else if ($post.is('.post--link')) {
                 var $postLink = $post.find('a');
                 var href = $postLink.attr('href');

@@ -36,9 +36,14 @@ var_sample:
       src: sample/img_sample_tumblr.png
       caption: <p>タンブラーを開設する<br />テーマを適用する<br />画像を投稿する<br />完成!</p>
       tags: 'howtouse'
+    -
+      type: text
+      body: <p>こちらからダウンロードしてください。</p>
+      tags: 'download'
 #    -
 #      type: photo
 #      src: sample/img_sample_tumblr.png
+#      caption: <p>こちらからダウンロードしてください。</p>
 #      tags: 'download'
     -
       type: link

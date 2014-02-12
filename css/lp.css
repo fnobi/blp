@@ -204,13 +204,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 113, ../src/sass/lp.scss */
 .download {
   background-color: #046380;
+  color: #e6e2af;
   position: relative;
   min-height: 700px;
   font-size: 17px;
   line-height: 27px;
 }
 
-/* line 122, ../src/sass/lp.scss */
+/* line 123, ../src/sass/lp.scss */
 .download__left {
   position: absolute;
   right: 50%;
@@ -222,7 +223,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 129, ../src/sass/lp.scss */
+/* line 130, ../src/sass/lp.scss */
 .download__right {
   position: absolute;
   left: 50%;
@@ -235,7 +236,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0%, -50%);
 }
 
-/* line 137, ../src/sass/lp.scss */
+/* line 138, ../src/sass/lp.scss */
 .download__center {
   position: absolute;
   left: 50%;
@@ -247,23 +248,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(-50%, -50%);
 }
 
-/* line 144, ../src/sass/lp.scss */
+/* line 145, ../src/sass/lp.scss */
 .download__title {
   margin: 10px 0px;
 }
 
-/* line 148, ../src/sass/lp.scss */
+/* line 149, ../src/sass/lp.scss */
 .download__link--ios, .download__link--android {
   display: inline-block;
   width: 190px;
   height: 62px;
 }
-/* line 152, ../src/sass/lp.scss */
+/* line 153, ../src/sass/lp.scss */
 .download__link--ios span, .download__link--android span {
   display: none;
 }
 
-/* line 157, ../src/sass/lp.scss */
+/* line 158, ../src/sass/lp.scss */
 .footer {
   height: 70px;
   background-color: #002f2f;
@@ -272,7 +273,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
 }
 
-/* line 165, ../src/sass/lp.scss */
+/* line 166, ../src/sass/lp.scss */
 .posts {
   display: none;
 }
