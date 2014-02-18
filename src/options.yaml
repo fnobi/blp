@@ -17,10 +17,11 @@ keywords: []
 favicon_url: ''
 
 viewport: 
-  - width=device-width
-  - initial-scale=1.0
-  - maximum-scale=1.0
-  - user-scalable=0
+  - width=640
+#  - width=device-width
+#  - initial-scale=1.0
+#  - maximum-scale=1.0
+#  - user-scalable=0
 
 ios_icon_url: ''
 
