@@ -15,6 +15,7 @@ $long_margin: 66px;
 .header {
     width: 100%;
     max-width: 960px;
+    min-width: $content_width;
     height: 420px;
     margin: auto;
     background-color: #eee;
