@@ -48,7 +48,7 @@ $long_margin: 66px;
     @include background-size(cover);
 }
 
-@include bem-element(post, (text, photo, video)) {
+@include bem-element(post, (text, photo, video, link)) {
     width: $content_width;
     margin: auto; 
 
@@ -76,6 +76,11 @@ $long_margin: 66px;
         margin: auto;
         max-width: $content_width;
     }
+}
+
+.post--video iframe {
+    width: $content_width;
+    height: 9 * $content_width / 16
 }
 
 .footer {

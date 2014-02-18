@@ -110,7 +110,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 8, ../src/sass/lib/_bem-element.scss */
-.post, .post--text, .post--photo, .post--video {
+.post, .post--text, .post--photo, .post--video, .post--link {
   width: 640px;
   margin: auto;
   color: #002f2f;
@@ -120,24 +120,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 22px 0px;
 }
 /* line 63, ../src/sass/lp.scss */
-.post p, .post--text p, .post--photo p, .post--video p {
+.post p, .post--text p, .post--photo p, .post--video p, .post--link p {
   margin: 44px 0px;
 }
 /* line 67, ../src/sass/lp.scss */
-.post strong, .post--text strong, .post--photo strong, .post--video strong {
+.post strong, .post--text strong, .post--photo strong, .post--video strong, .post--link strong {
   display: block;
   text-align: center;
   font-size: 26px;
   line-height: 1;
 }
 /* line 74, ../src/sass/lp.scss */
-.post img, .post--text img, .post--photo img, .post--video img {
+.post img, .post--text img, .post--photo img, .post--video img, .post--link img {
   display: block;
   margin: auto;
   max-width: 640px;
 }
 
 /* line 81, ../src/sass/lp.scss */
+.post--video iframe {
+  width: 640px;
+  height: 360px;
+}
+
+/* line 86, ../src/sass/lp.scss */
 .footer {
   width: 640px;
   margin: auto;
