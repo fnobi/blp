@@ -3,6 +3,8 @@
 
 @import "lib/bem-element";
 
+$post_types: (text, photo, video, link);
+
 $content_width: 640px;
 
 $short_margin: 44px;
@@ -15,7 +17,6 @@ $long_margin: 66px;
 .header {
     width: 100%;
     max-width: 960px;
-    min-width: $content_width;
     height: 420px;
     margin: auto;
     background-color: #eee;
@@ -102,9 +103,10 @@ $long_margin: 66px;
     }
 }
 
-@include bem-element(post, (text, photo, video, link)) {
+@include bem-element(post, $post_types) {
     width: $content_width;
     margin: auto; 
+    max-width: 94%;
 
     color: #002f2f;
     font-size: 16px;
@@ -147,7 +149,6 @@ $long_margin: 66px;
 }
 
 .footer {
-    width: $content_width;
     margin: auto;
     text-align: center;
     padding: $long_margin 0px;
