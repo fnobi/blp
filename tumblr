@@ -170,11 +170,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 87, ../src/sass/lp.scss */
+.post--video .tumblr_video_container {
+  max-width: 640px;
+}
+
+/* line 91, ../src/sass/lp.scss */
 .post--link {
   text-align: center;
 }
 
-/* line 91, ../src/sass/lp.scss */
+/* line 95, ../src/sass/lp.scss */
 .footer {
   width: 640px;
   margin: auto;

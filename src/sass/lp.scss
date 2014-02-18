@@ -84,6 +84,10 @@ $long_margin: 66px;
     height: 9 * $content_width / 16
 }
 
+.post--video .tumblr_video_container {
+    max-width: $content_width;
+}
+
 .post--link {
     text-align: center;
 }
