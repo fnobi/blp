@@ -88,219 +88,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 7, ../src/sass/lp.scss */
+/* line 11, ../src/sass/lp.scss */
 #wrapper {
-  margin: auto;
   font-family: sans-serif;
 }
 
-/* line 12, ../src/sass/lp.scss */
-.intro, .movie, .howtouse, .download, .footer {
-  min-width: 980px;
+/* line 8, ../src/sass/lib/_bem-element.scss */
+.post, .post--text, .post--photo, .post--video {
+  width: 640px;
+  margin: auto;
+  color: #002f2f;
+  font-size: 16px;
+  line-height: 30px;
+  border-bottom: solid 1px black;
+  padding: 22px 0px;
 }
-
-/* line 16, ../src/sass/lp.scss */
-.intro {
-  overflow: hidden;
-  text-align: center;
-  position: relative;
+/* line 28, ../src/sass/lp.scss */
+.post p, .post--text p, .post--photo p, .post--video p {
+  margin: 44px 0px;
 }
-
-/* line 22, ../src/sass/lp.scss */
-.intro__cover {
-  height: 650px;
-  width: 300%;
-  margin-left: -100%;
-}
-/* line 27, ../src/sass/lp.scss */
-.intro__cover span {
-  display: none;
-}
-
 /* line 32, ../src/sass/lp.scss */
-.cover {
-  display: inline-block;
-  width: 980px;
-  height: 650px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/* line 39, ../src/sass/lp.scss */
-.nav--prev, .nav--next {
-  position: absolute;
+.post strong, .post--text strong, .post--photo strong, .post--video strong {
   display: block;
-  top: 325px;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  left: 50%;
-  cursor: pointer;
-}
-/* line 50, ../src/sass/lp.scss */
-.nav--prev span, .nav--next span {
-  display: none;
-}
-
-/* line 55, ../src/sass/lp.scss */
-.nav--prev {
-  margin-left: -490px;
-}
-
-/* line 58, ../src/sass/lp.scss */
-.nav--next {
-  margin-left: 490px;
-}
-
-/* line 62, ../src/sass/lp.scss */
-.movie {
-  background-color: white;
   text-align: center;
-  overflow: hidden;
-  padding: 70px 0px;
+  font-size: 26px;
+  line-height: 1;
 }
-
-/* line 69, ../src/sass/lp.scss */
-.movie__title {
-  margin-bottom: 65px;
-}
-/* line 71, ../src/sass/lp.scss */
-.movie__title img {
+/* line 39, ../src/sass/lp.scss */
+.post img, .post--text img, .post--photo img, .post--video img {
   display: block;
   margin: auto;
-}
-
-/* line 77, ../src/sass/lp.scss */
-.howtouse {
-  background-color: #e6e2af;
-  position: relative;
-  min-height: 700px;
-  color: #002f2f;
-  font-size: 17px;
-  line-height: 27px;
-}
-
-/* line 87, ../src/sass/lp.scss */
-.howtouse__left {
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  margin-right: 110px;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-}
-
-/* line 95, ../src/sass/lp.scss */
-.howtouse__right {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-}
-
-/* line 102, ../src/sass/lp.scss */
-.howtouse__center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/* line 109, ../src/sass/lp.scss */
-.howtouse__title {
-  margin: 10px 0px;
-}
-
-/* line 113, ../src/sass/lp.scss */
-.download {
-  background-color: #046380;
-  color: #e6e2af;
-  position: relative;
-  min-height: 700px;
-  font-size: 17px;
-  line-height: 27px;
-}
-
-/* line 123, ../src/sass/lp.scss */
-.download__left {
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-}
-
-/* line 130, ../src/sass/lp.scss */
-.download__right {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: 110px;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-}
-
-/* line 138, ../src/sass/lp.scss */
-.download__center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/* line 145, ../src/sass/lp.scss */
-.download__title {
-  margin: 10px 0px;
-}
-
-/* line 149, ../src/sass/lp.scss */
-.download__link--ios, .download__link--android {
-  display: inline-block;
-  width: 190px;
-  height: 62px;
-}
-/* line 153, ../src/sass/lp.scss */
-.download__link--ios span, .download__link--android span {
-  display: none;
-}
-
-/* line 158, ../src/sass/lp.scss */
-.footer {
-  height: 70px;
-  background-color: #002f2f;
-  line-height: 70px;
-  text-align: center;
-  color: white;
-}
-
-/* line 166, ../src/sass/lp.scss */
-.posts {
-  display: none;
+  max-width: 640px;
 }
 
 </style>
@@ -317,35 +135,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 <section id="wrapper">
 
 
-<div class="intro">
-<ul class="intro__cover"></ul>
-<ul class="intro__nav">
-<li><a class="nav--prev"><img src="http://blp-preview.fnobi.com/sample/ico_prev.png" alt="prev"/></a></li>
-<li><a class="nav--next"><img src="http://blp-preview.fnobi.com/sample/ico_next.png" alt="next"/></a></li>
-<!-- /.intro__nav --></ul>
-<!-- /.intro --></div>
-<div class="movie">
-<h1 class="movie__title"><img src="http://blp-preview.fnobi.com/sample/ttl_movie.png" alt="MOVIE" /></h1>
-<!-- /.movie --></div>
-<div class="howtouse">
-<div class="howtouse__left">
-<h1 class="howtouse__title"><img src="http://blp-preview.fnobi.com/sample/ttl_howtouse.png" alt="How to Use" /></h1>
-<!-- /.howtouse__left --></div>
-<div class="howtouse__right"></div>
-<!-- /.howtouse --></div>
-<div class="download">
-<div class="download__right">
-<h1 class="download__title"><img src="http://blp-preview.fnobi.com/sample/ttl_download.png" alt="DOWNLOAD" /></h1>
-<ul>
-<!-- <li><a class="download__link--appstore" href="#"><img src="http://blp-preview.fnobi.com/sample/btn_appstore.png" alt="App Store" /></a></li> -->
-<!-- <li><a class="download__link--googleplay" href="#"><img src="http://blp-preview.fnobi.com/sample/btn_googleplay.png" alt="Google play" /></a></li> -->
-</ul>
-<!-- /.download__right --></div>
-<div class="download__left"></div>
-<!-- /.download --></div>
-<div class="footer">
-Copyright &copy; {text:Copyright} All Rights Reserved.
-<!-- /.footer --></div>
 <div class="posts">{block:Posts}{block:Text}
 <section class="post--text {block:Tags}{Tag} {/block:Tags}">
 {Body}
@@ -9526,6 +9315,9 @@ Covers.prototype.shiftRight = function () {
 };
 
 $(function () {
+    return;
+
+
     // intro
     (function () {
         var $introCover = $('.intro__cover');

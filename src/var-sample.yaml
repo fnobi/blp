@@ -19,95 +19,42 @@ var_sample:
 
   posts:
     -
-      type: photo
-      src: sample/img_sample_cover_2.jpg
-      caption: BAKUSOKU LP KIT -smart landing page kit with Tumblr-
-      tags: 'cover'
-    -
-      type: photo
-      src: sample/img_sample_cover_1.jpg
-      caption: BAKUSOKU LP KIT -smart landing page kit with Tumblr-
-      tags: 'cover'
-    -
-      type: photo
-      src: sample/img_sample_cover_3.jpg
-      caption: BAKUSOKU LP KIT -smart landing page kit with Tumblr-
-      tags: 'cover'
-    -
-      type: video
-      video: '<iframe width="700" height="394" src="//www.youtube.com/embed/Facvl0v9Unc" frameborder="0" allowfullscreen></iframe>'
-#    -
-#      type: text
-#      body: <p>タンブラーを開設する<br />テーマを適用する<br />画像を投稿する<br />完成!</p>
-#      tags: 'howtouse'
-    -
-      type: photo
-      src: sample/img_sample_tumblr.png
-      caption: <p>タンブラーを開設する<br />テーマを適用する<br />画像を投稿する<br />完成!</p>
-      tags: 'howtouse'
+      type: text
+      body:
+        <p><img src="sample/ttl_movie.png"></p>
+        <p><img src="sample/img_movie.png"></p>
+        <p><strong>Prototyping a new got.</strong></p>
+        <p>宗教学においては、儀式は、思想が行動として表現されるもので、それによって特定の宗教を信仰する者と信仰しない者を具体的に判別する事が出来るとし、個人ではなく、集団で行う事で教団として社会から認知されるとする所から、宗教集団を構成する要素の1つとして位置づけている。</p>
     -
       type: text
-      body: <p>こちらからダウンロードしてください。</p>
-      tags: 'download'
-#    -
-#      type: photo
-#      src: sample/img_sample_tumblr.png
-#      caption: <p>こちらからダウンロードしてください。</p>
-#      tags: 'download'
+      body:
+        <p><img src="sample/ttl_howtouse.png"></p>
+        <p><img src="sample/img_howtouse_1.png"></p>
+        <p><strong>Intrnet is...</strong></p>
+        <p>インターネットにつながるということは、テクノロジーという教義が支配するワールドワイドウェブと呼ばれるの宗教世界に入っていく体験に近い気がする。一昔前、インターネットにつながるためにはダイアルアップ接続の手順を踏まなければならず、当時学生だったぼくは電話代を節約するために夜23時の定額時間帯になった瞬間に、パソコンの前に座してダイアルアップボタンを押すのが日課だった。それは今思うと図らずして儀式めいていたように思う。</p>
+        <p><img src="sample/img_howtouse_2.png"></p>
+        <p><strong>Amaterasu.</strong></p>
+        <p>今やネットに常時接続されていることが当たり前になり、ダイアルアップのような儀式はなくなってしまった。今や我々の生活空間のほとんどはWiFiというインターネットにアクセスするための見えない力で覆われている。ある日、WiFiスポットを神道の神に例えることを思いついた。その土地を守る神様であり、誰かが祈りを捧げると、そのご利益は地域全体に還元される。同様に、誰かがインターネット神社に祈りを捧げると、ご利益として一定時間その周辺にフリーのWiFiスポットが立ち上がり、インターネットに接続すること遠くの人とつながったり、一人の人間が知り得ないほどのあらゆる情報にアクセスできる。目に見えない神の力だ。もしかしたらインターネット神社が全国の各地に設置されることによって、日本人にとって新しい信仰が生まれるかもしれない。</p>
     -
-      type: link
-      name: App Store
-      url: http://itunes.apple.com/
-      tags: 'download ios'
-    -
-      type: link
-      name: Google Play
-      url: http://play.google.com/
-      tags: 'download android'
+      type: text
+      body:
+        <p><img src="sample/ttl_download.png"></p>
+        <p><a href="" target="_blank"><img src="sample/btn_appstore.png"></a></p>
+        <p><a href="" target="_blank"><img src="sample/btn_googleplay.png"></a></p>
+        <p>推奨環境：iOS 5.1以上、Android 2.3・4.0以上でご利用ください。</p>
 
-    - 
-      type: text
-      body:
-        <p>bakusoku lp kitは、tumblrを使って簡単に、あなたのプロダクトの<strong>LP</strong>をつくることができる仕組みです。</p>
     -
-      type: link
-      name: DOWNLOAD
-      url: http://github.com/fnobi/tumblr-lp-template
+      type: photo
+      src: sample/img_cover_1.png
+      caption: <p>hogehogehoge</p>
+      tags: 'cover'
     -
-      type: link
-      name: iOS版
-      url: http://github.com/fnobi/tumblr-lp-template
-      tags: ios
+      type: photo
+      src: sample/img_cover_2.png
+      caption: <p>hogehogehoge</p>
+      tags: 'cover'
     -
-      type: link
-      name: Android版
-      url: http://github.com/fnobi/tumblr-lp-template
-      tags: android
-    - 
-      type: link
-      name: github
-      url: https://raw2.github.com/fnobi/tumblr-lp-template/master/tumblr
-      tags: github
-    - 
       type: photo
-      src: /sample/main.png
-      caption: メイン
-      tags: 'main'
-    - 
-      type: photo
-      src: /sample/capture1.jpg
-      caption: キャプチャ1
-    - 
-      type: photo
-      src: /sample/capture2.jpg
-      caption: キャプチャ2
-    - 
-      type: photo
-      src: /sample/capture3.jpg
-      caption: キャプチャ3
-    - 
-      type: text
-      body:
-        <p>ある程度まとまったテキスト</p>
-        <p>ある程度まとまったテキスト</p>
-        <p>ある程度まとまったテキスト</p>
+      src: sample/img_cover_3.png
+      caption: <p>hogehogehoge</p>
+      tags: 'cover'

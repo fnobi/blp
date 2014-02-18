@@ -47,6 +47,9 @@ Covers.prototype.shiftRight = function () {
 };
 
 $(function () {
+    return;
+
+
     // intro
     (function () {
         var $introCover = $('.intro__cover');

@@ -1,168 +1,44 @@
 @import "compass";
 @import "compass/reset";
 
-$content_width: 980px;
-$cover_height: 650px;
+@import "lib/bem-element";
+
+$content_width: 640px;
+
+$short_margin: 44px;
+$long_margin: 66px;
 
 #wrapper {
-    margin: auto;
     font-family: sans-serif;
 }
 
-.intro, .movie, .howtouse, .download, .footer {
-    min-width: $content_width;
-}
 
-.intro {
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-}
-
-.intro__cover {
-    height: $cover_height;
-    width: 300%;
-    margin-left: -100%;
-
-    span {
-        display: none;
-    }
-}
-
-.cover {
-    display: inline-block;
+@include bem-element(post, (text, photo, video)) {
     width: $content_width;
-    height: $cover_height;
-    @include background-size(cover);
-}
+    margin: auto; 
 
-.nav--prev, .nav--next {
-    position: absolute;
-    display: block;
+    color: #002f2f;
+    font-size: 16px;
+    line-height: 30px;
 
-    top: $cover_height / 2;
-    @include translate(-50%, -50%);
+    border-bottom: solid 1px black;
+    padding: ($long_margin - $short_margin) 0px;
 
-    left: 50%;
 
-    cursor: pointer;
-
-    span {
-        display: none;
+    p {
+        margin: $short_margin 0px;
     }
-}
 
-.nav--prev {
-    margin-left: -$content_width / 2;
-}
-.nav--next {
-    margin-left: $content_width / 2;
-}
+    strong {
+        display: block;
+        text-align: center;
+        font-size: 26px;
+        line-height: 1;
+    }
 
-.movie {
-    background-color: white;
-    text-align: center;
-    overflow: hidden;
-    padding: 70px 0px;
-}
-
-.movie__title {
-    margin-bottom: 65px;
     img {
         display: block;
         margin: auto;
+        max-width: $content_width;
     }
-}
-
-.howtouse {
-    background-color: #e6e2af;
-    position: relative;
-    min-height: 700px;
-
-    color: #002f2f;
-    font-size: 17px;
-    line-height: 27px; 
-}
-
-.howtouse__left {
-    position: absolute;
-    right: 50%;
-    top: 50%;
-    margin-right: 110px;
-    @include translate(0%, -50%);
-}
-
-.howtouse__right {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    @include translate(0%, -50%);
-}
-
-.howtouse__center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    @include translate(-50%, -50%);
-}
-
-.howtouse__title {
-    margin: 10px 0px;
-}
-
-.download {
-    background-color: #046380;
-    color: #e6e2af;
-    position: relative;
-    min-height: 700px;
-
-    font-size: 17px;
-    line-height: 27px; 
-}
-
-.download__left {
-    position: absolute;
-    right: 50%;
-    top: 50%;
-    @include translate(0%, -50%);
-}
-
-.download__right {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: 110px;
-    @include translate(0%, -50%);
-}
-
-.download__center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    @include translate(-50%, -50%);
-}
-
-.download__title {
-    margin: 10px 0px;
-}
-
-.download__link--ios, .download__link--android {
-    display: inline-block;
-    width: 190px;
-    height: 62px;
-    span {
-        display: none;
-    }
-}
-
-.footer {
-    height: 70px;
-    background-color: #002f2f;
-    line-height: 70px;
-    text-align: center;
-    color: white;
-}
-
-.posts {
-    display: none;
 }
