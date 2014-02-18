@@ -1,5 +1,7 @@
 <% locals.partial_content = function (buf, opts) { %>
 <header class="header">
+<h1><%= opts.title %></h1>
+<h2><%= opts.description %></h2>
 <ul class="header__slide"></ul>
 <!-- /.header --></header>
 <div class="posts"><%= (opts.env == 'tumblr') ? '{block:Posts}' : '' %><% opts.posts.forEach(function (post) { %><% if (post.type == 'text') { %><%= (opts.env == 'tumblr') ? '{block:Text}' : '' %>

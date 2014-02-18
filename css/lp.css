@@ -70,14 +70,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 15, ../src/sass/lp.scss */
 .header {
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   height: 420px;
   margin: auto;
   background-color: #eee;
   position: relative;
 }
-
 /* line 23, ../src/sass/lp.scss */
+.header h1, .header h2 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+/* line 30, ../src/sass/lp.scss */
+.header h1 {
+  bottom: 50%;
+  margin-bottom: 22px;
+  font-size: 30px;
+}
+/* line 35, ../src/sass/lp.scss */
+.header h2 {
+  top: 50%;
+  margin-top: 22px;
+  font-size: 20px;
+}
+
+/* line 42, ../src/sass/lp.scss */
 .slide {
   position: absolute;
   width: 100%;
@@ -99,25 +119,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-bottom: solid 1px black;
   padding: 22px 0px;
 }
-/* line 44, ../src/sass/lp.scss */
+/* line 63, ../src/sass/lp.scss */
 .post p, .post--text p, .post--photo p, .post--video p {
   margin: 44px 0px;
 }
-/* line 48, ../src/sass/lp.scss */
+/* line 67, ../src/sass/lp.scss */
 .post strong, .post--text strong, .post--photo strong, .post--video strong {
   display: block;
   text-align: center;
   font-size: 26px;
   line-height: 1;
 }
-/* line 55, ../src/sass/lp.scss */
+/* line 74, ../src/sass/lp.scss */
 .post img, .post--text img, .post--photo img, .post--video img {
   display: block;
   margin: auto;
   max-width: 640px;
 }
 
-/* line 62, ../src/sass/lp.scss */
+/* line 81, ../src/sass/lp.scss */
 .footer {
   width: 640px;
   margin: auto;

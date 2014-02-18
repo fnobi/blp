@@ -63,6 +63,10 @@ $(function () {
             $headerSlide.prepend($li);
         });
 
+        if ($slidePosts.length < 2) {
+            return;
+        }
+
         var waitTime = 2000;
         var fadeTime = 2000;
 
