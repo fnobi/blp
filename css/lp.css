@@ -119,42 +119,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 30px;
   border-bottom: solid 1px black;
   padding: 22px 0px;
+  overflow: hidden;
 }
-/* line 64, ../src/sass/lp.scss */
+/* line 65, ../src/sass/lp.scss */
 .post p, .post--text p, .post--photo p, .post--video p, .post--link p {
   margin: 44px 0px;
 }
-/* line 68, ../src/sass/lp.scss */
+/* line 69, ../src/sass/lp.scss */
 .post strong, .post--text strong, .post--photo strong, .post--video strong, .post--link strong {
   display: block;
   text-align: center;
   font-size: 26px;
   line-height: 1;
 }
-/* line 75, ../src/sass/lp.scss */
+/* line 76, ../src/sass/lp.scss */
 .post img, .post iframe, .post--text img, .post--text iframe, .post--photo img, .post--photo iframe, .post--video img, .post--video iframe, .post--link img, .post--link iframe {
   display: block;
   margin: auto;
   max-width: 640px;
 }
 
-/* line 82, ../src/sass/lp.scss */
+/* line 83, ../src/sass/lp.scss */
 .post--video iframe {
   width: 640px;
   height: 360px;
 }
 
-/* line 87, ../src/sass/lp.scss */
+/* line 88, ../src/sass/lp.scss */
 .post--video .tumblr_video_container {
   max-width: 640px;
 }
 
-/* line 91, ../src/sass/lp.scss */
+/* line 92, ../src/sass/lp.scss */
 .post--link {
   text-align: center;
 }
 
-/* line 95, ../src/sass/lp.scss */
+/* line 96, ../src/sass/lp.scss */
 .footer {
   width: 640px;
   margin: auto;

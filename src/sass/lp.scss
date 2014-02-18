@@ -60,6 +60,7 @@ $long_margin: 66px;
     border-bottom: solid 1px black;
     padding: ($long_margin - $short_margin) 0px;
 
+    overflow: hidden;
 
     p {
         margin: $short_margin 0px;
