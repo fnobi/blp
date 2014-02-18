@@ -9159,6 +9159,37 @@ Covers.prototype.shiftRight = function () {
 };
 
 $(function () {
+    // init cover
+    (function () {
+        var $headerSlide = $('.header__slide');
+        var $slidePosts = $('.post--photo.cover');
+        $slidePosts.each(function () {
+            var $slidePost = $(this);
+            $slidePost.hide();
+
+            var $li = $('<li />');
+            $li.addClass('slide');
+            $li.css({
+                backgroundImage: 'url(' + $slidePost.find('img').attr('src') + ')'
+            });
+            $headerSlide.prepend($li);
+        });
+
+        var waitTime = 2000;
+        var fadeTime = 2000;
+
+        (function paging () {
+            setTimeout(function () {
+                var $first = $($headerSlide.children(':last'));
+                $first.fadeOut(fadeTime, function () {
+                    $headerSlide.prepend($first);
+                    $first.show();
+                    paging();
+                });
+            }, waitTime);
+        })();
+    })();
+
     return;
 
 

@@ -93,6 +93,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-family: sans-serif;
 }
 
+/* line 15, ../src/sass/lp.scss */
+.header {
+  width: 960px;
+  height: 420px;
+  margin: auto;
+  background-color: #eee;
+}
+
 /* line 8, ../src/sass/lib/_bem-element.scss */
 .post, .post--text, .post--photo, .post--video {
   width: 640px;
@@ -103,18 +111,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-bottom: solid 1px black;
   padding: 22px 0px;
 }
-/* line 28, ../src/sass/lp.scss */
+/* line 34, ../src/sass/lp.scss */
 .post p, .post--text p, .post--photo p, .post--video p {
   margin: 44px 0px;
 }
-/* line 32, ../src/sass/lp.scss */
+/* line 38, ../src/sass/lp.scss */
 .post strong, .post--text strong, .post--photo strong, .post--video strong {
   display: block;
   text-align: center;
   font-size: 26px;
   line-height: 1;
 }
-/* line 39, ../src/sass/lp.scss */
+/* line 45, ../src/sass/lp.scss */
 .post img, .post--text img, .post--photo img, .post--video img {
   display: block;
   margin: auto;
@@ -135,6 +143,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 <section id="wrapper">
 
 
+<header class="header">
+<ul class="header__slide"></ul>
+<!-- /.header --></header>
 <div class="posts">{block:Posts}{block:Text}
 <section class="post--text {block:Tags}{Tag} {/block:Tags}">
 {Body}
@@ -152,6 +163,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 {Video-700}
 <!-- /.post--video --></section>{/block:Video}{/block:Posts}
 <!-- /.posts --></div>
+<div class="footer">
+Copyright &copy; {text:Copyright} All Rights Reserved.
+<!-- /.footer --></div>
 <!-- /#wrapper --></section>
 <script>
 /*!
@@ -9315,6 +9329,18 @@ Covers.prototype.shiftRight = function () {
 };
 
 $(function () {
+    // init cover
+    (function () {
+        var $covers = $('.post--photo.cover');
+        $covers.each(function () {
+            var $cover = $(this);
+            $cover.hide();
+        });
+    })();
+
+
+
+
     return;
 
 

@@ -1,4 +1,7 @@
 <% locals.partial_content = function (buf, opts) { %>
+<header class="header">
+<ul class="header__slide"></ul>
+<!-- /.header --></header>
 <div class="posts"><%= (opts.env == 'tumblr') ? '{block:Posts}' : '' %><% opts.posts.forEach(function (post) { %><% if (post.type == 'text') { %><%= (opts.env == 'tumblr') ? '{block:Text}' : '' %>
 <section class="post--text<%= post.tags ? (' ' + post.tags) : '' %>">
 <%- post.body %>
@@ -15,4 +18,7 @@
 <section class="post--video<%= post.tags ? (' ' + post.tags) : '' %>">
 <%- post.video %>
 <!-- /.post--video --></section><%= (opts.env == 'tumblr') ? '{/block:Video}' : '' %><% } %><% }) %><%= (opts.env == 'tumblr') ? '{/block:Posts}' : '' %>
-<!-- /.posts --></div><% } %>
+<!-- /.posts --></div>
+<div class="footer">
+Copyright &copy; <%= opts.textCopyright %> All Rights Reserved.
+<!-- /.footer --></div><% } %>

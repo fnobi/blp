@@ -12,6 +12,22 @@ $long_margin: 66px;
     font-family: sans-serif;
 }
 
+.header {
+    width: 960px;
+    height: 420px;
+    margin: auto;
+    background-color: #eee;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background-position: center center;
+    @include background-size(cover);
+}
 
 @include bem-element(post, (text, photo, video)) {
     width: $content_width;
@@ -41,4 +57,11 @@ $long_margin: 66px;
         margin: auto;
         max-width: $content_width;
     }
+}
+
+.footer {
+    width: $content_width;
+    margin: auto;
+    text-align: center;
+    padding: $long_margin 0px;
 }
