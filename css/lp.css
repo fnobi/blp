@@ -144,6 +144,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 86, ../src/sass/lp.scss */
+.post--link {
+  text-align: center;
+}
+
+/* line 90, ../src/sass/lp.scss */
 .footer {
   width: 640px;
   margin: auto;

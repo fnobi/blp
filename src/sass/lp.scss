@@ -83,6 +83,10 @@ $long_margin: 66px;
     height: 9 * $content_width / 16
 }
 
+.post--link {
+    text-align: center;
+}
+
 .footer {
     width: $content_width;
     margin: auto;
