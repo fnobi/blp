@@ -94,6 +94,13 @@ $long_margin: 66px;
     @include background-size(cover);
 }
 
+.sns {
+    text-align: center;
+    margin-top: $short_margin;
+    li {
+        display: inline-block;
+    }
+}
 
 @include bem-element(post, (text, photo, video, link)) {
     width: $content_width;

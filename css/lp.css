@@ -167,6 +167,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-size: cover;
 }
 
+/* line 97, ../src/sass/lp.scss */
+.sns {
+  text-align: center;
+  margin-top: 44px;
+}
+/* line 100, ../src/sass/lp.scss */
+.sns li {
+  display: inline-block;
+}
+
 /* line 8, ../src/sass/lib/_bem-element.scss */
 .post, .post--text, .post--photo, .post--video, .post--link {
   width: 640px;
@@ -178,41 +188,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 22px 0px;
   overflow: hidden;
 }
-/* line 111, ../src/sass/lp.scss */
+/* line 118, ../src/sass/lp.scss */
 .post p, .post--text p, .post--photo p, .post--video p, .post--link p {
   margin: 44px 0px;
 }
-/* line 115, ../src/sass/lp.scss */
+/* line 122, ../src/sass/lp.scss */
 .post strong, .post--text strong, .post--photo strong, .post--video strong, .post--link strong {
   display: block;
   text-align: center;
   font-size: 26px;
   line-height: 1;
 }
-/* line 122, ../src/sass/lp.scss */
+/* line 129, ../src/sass/lp.scss */
 .post img, .post iframe, .post--text img, .post--text iframe, .post--photo img, .post--photo iframe, .post--video img, .post--video iframe, .post--link img, .post--link iframe {
   display: block;
   margin: auto;
   max-width: 640px;
 }
 
-/* line 129, ../src/sass/lp.scss */
+/* line 136, ../src/sass/lp.scss */
 .post--video iframe {
   width: 640px;
   height: 360px;
 }
 
-/* line 134, ../src/sass/lp.scss */
+/* line 141, ../src/sass/lp.scss */
 .post--video .tumblr_video_container {
   max-width: 640px;
 }
 
-/* line 138, ../src/sass/lp.scss */
+/* line 145, ../src/sass/lp.scss */
 .post--link {
   text-align: center;
 }
 
-/* line 142, ../src/sass/lp.scss */
+/* line 149, ../src/sass/lp.scss */
 .footer {
   width: 640px;
   margin: auto;

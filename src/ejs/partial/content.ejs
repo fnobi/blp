@@ -5,6 +5,12 @@
 <ul class="header__slide"></ul>
 <ul class="header__guide"></ul>
 <!-- /.header --></header>
+<ul class="sns">
+<li><% partial_likebutton(buf, { url: url }) %></li>
+<li><% partial_tweetbutton(buf, { url: url }) %></li>
+<li><% partial_gplusbutton(buf, { url: url }) %></li>
+<li><% partial_hatenabutton(buf, { url: url }) %></li>
+<!-- /.sns --></ul>
 <div class="posts"><%= (opts.env == 'tumblr') ? '{block:Posts}' : '' %><% opts.posts.forEach(function (post) { %><% if (post.type == 'text') { %><%= (opts.env == 'tumblr') ? '{block:Text}' : '' %>
 <section class="post--text<%= post.tags ? (' ' + post.tags) : '' %>">
 <%- post.body %>

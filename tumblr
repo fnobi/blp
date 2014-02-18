@@ -124,6 +124,63 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 43, ../src/sass/lp.scss */
+.header__guide {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+/* line 49, ../src/sass/lp.scss */
+.guide {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2.5px;
+  margin: 0px 5px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 66, ../src/sass/lp.scss */
+.guide:before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  position: absolute;
+  top: -2.5px;
+  left: -2.5px;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 83, ../src/sass/lp.scss */
+.guide.active:before {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+/* line 88, ../src/sass/lp.scss */
 .slide {
   position: absolute;
   width: 100%;
@@ -133,6 +190,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/* line 97, ../src/sass/lp.scss */
+.sns {
+  text-align: center;
+  margin-top: 44px;
+}
+/* line 100, ../src/sass/lp.scss */
+.sns li {
+  display: inline-block;
 }
 
 /* line 8, ../src/sass/lib/_bem-element.scss */
@@ -146,41 +213,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 22px 0px;
   overflow: hidden;
 }
-/* line 65, ../src/sass/lp.scss */
+/* line 118, ../src/sass/lp.scss */
 .post p, .post--text p, .post--photo p, .post--video p, .post--link p {
   margin: 44px 0px;
 }
-/* line 69, ../src/sass/lp.scss */
+/* line 122, ../src/sass/lp.scss */
 .post strong, .post--text strong, .post--photo strong, .post--video strong, .post--link strong {
   display: block;
   text-align: center;
   font-size: 26px;
   line-height: 1;
 }
-/* line 76, ../src/sass/lp.scss */
+/* line 129, ../src/sass/lp.scss */
 .post img, .post iframe, .post--text img, .post--text iframe, .post--photo img, .post--photo iframe, .post--video img, .post--video iframe, .post--link img, .post--link iframe {
   display: block;
   margin: auto;
   max-width: 640px;
 }
 
-/* line 83, ../src/sass/lp.scss */
+/* line 136, ../src/sass/lp.scss */
 .post--video iframe {
   width: 640px;
   height: 360px;
 }
 
-/* line 88, ../src/sass/lp.scss */
+/* line 141, ../src/sass/lp.scss */
 .post--video .tumblr_video_container {
   max-width: 640px;
 }
 
-/* line 92, ../src/sass/lp.scss */
+/* line 145, ../src/sass/lp.scss */
 .post--link {
   text-align: center;
 }
 
-/* line 96, ../src/sass/lp.scss */
+/* line 149, ../src/sass/lp.scss */
 .footer {
   width: 640px;
   margin: auto;
@@ -199,6 +266,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 </style>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <section id="wrapper">
 
 
@@ -208,6 +283,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 <ul class="header__slide"></ul>
 <ul class="header__guide"></ul>
 <!-- /.header --></header>
+<ul class="sns">
+<li><div class="fb-like" data-href="http://bakusoku-lp-kit.tumblr.com/" data-send="false" data-layout="button_count" data-width="70" data-show-faces="false"></div></li>
+<li>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="none" data-url="http://bakusoku-lp-kit.tumblr.com/">ツイート</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
+</li>
+<li><div class="g-plusone" data-href="http://bakusoku-lp-kit.tumblr.com/" ></div>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script></li>
+<li><a href="http://b.hatena.ne.jp/entry/http%3A%2F%2Fbakusoku-lp-kit.tumblr.com%2F" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+<!-- /.sns --></ul>
 <div class="posts">{block:Posts}{block:Text}
 <section class="post--text {block:Tags}{Tag} {/block:Tags}">
 {Body}
@@ -9394,17 +9489,23 @@ $(function () {
     // init cover
     (function () {
         var $headerSlide = $('.header__slide');
+        var $headerGuide = $('.header__guide');
+
         var $slidePosts = $('.post--photo.cover');
         $slidePosts.each(function () {
             var $slidePost = $(this);
             $slidePost.hide();
 
-            var $li = $('<li />');
-            $li.addClass('slide');
-            $li.css({
+            var $slide = $('<li />');
+            $slide.addClass('slide');
+            $slide.css({
                 backgroundImage: 'url(' + $slidePost.find('img').attr('src') + ')'
             });
-            $headerSlide.prepend($li);
+            $headerSlide.prepend($slide);
+
+            var $guide = $('<li />');
+            $guide.addClass('guide');
+            $headerGuide.append($guide);
         });
 
         if ($slidePosts.length < 2) {
@@ -9413,9 +9514,15 @@ $(function () {
 
         var waitTime = 2000;
         var fadeTime = 2000;
+        var index = 0;
 
+        $('.guide:first').addClass('active');
         (function paging () {
             setTimeout(function () {
+                index = (index + 1) % $headerSlide.children().length;
+                $('.guide.active').removeClass('active');
+                $('.guide:nth-child(' + (index + 1) + ')').addClass('active');
+
                 var $first = $($headerSlide.children(':last'));
                 $first.fadeOut(fadeTime, function () {
                     $headerSlide.prepend($first);
