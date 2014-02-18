@@ -206,6 +206,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 <h1>{Title}</h1>
 <h2>{PlaintextDescription}</h2>
 <ul class="header__slide"></ul>
+<ul class="header__guide"></ul>
 <!-- /.header --></header>
 <div class="posts">{block:Posts}{block:Text}
 <section class="post--text {block:Tags}{Tag} {/block:Tags}">

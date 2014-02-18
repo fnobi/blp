@@ -40,6 +40,51 @@ $long_margin: 66px;
     }
 }
 
+.header__guide {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.guide {
+    $size: 10px;
+
+    display: inline-block;
+    width: $size;
+    height: $size;
+    @include border-radius($size * 1.5);
+
+    border-style: solid;
+    border-color: white;
+    border-width: ($size / 4);
+
+    margin: 0px ($size / 2);
+
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        display: block;
+        width: $size * 1.5;
+        height: $size * 1.5;
+        background-color: white;
+
+        position: absolute;
+        top: -$size / 4;
+        left: -$size / 4;
+
+        @include scale(0);
+
+        @include transition-property(transform);
+        @include transition-duration(0.5s);
+    }
+
+    &.active:before {
+        @include scale(1);
+    }
+}
+
 .slide {
     position: absolute;
     width: 100%;
@@ -48,6 +93,7 @@ $long_margin: 66px;
     background-position: center center;
     @include background-size(cover);
 }
+
 
 @include bem-element(post, (text, photo, video, link)) {
     width: $content_width;

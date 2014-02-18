@@ -3,6 +3,7 @@
 <h1><%= opts.title %></h1>
 <h2><%= opts.description %></h2>
 <ul class="header__slide"></ul>
+<ul class="header__guide"></ul>
 <!-- /.header --></header>
 <div class="posts"><%= (opts.env == 'tumblr') ? '{block:Posts}' : '' %><% opts.posts.forEach(function (post) { %><% if (post.type == 'text') { %><%= (opts.env == 'tumblr') ? '{block:Text}' : '' %>
 <section class="post--text<%= post.tags ? (' ' + post.tags) : '' %>">
