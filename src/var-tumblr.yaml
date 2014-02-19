@@ -22,20 +22,20 @@ var_tumblr:
       type: text
       title: '{Title}'
       body: '{Body}'
-      tags: '{block:Tags}{Tag} {/block:Tags}'
+      tags: '{block:Tags}tag--{Tag} {/block:Tags}'
     - 
       type: link
       name: '{Name}'
       url: '{URL}'
-      tags: '{block:Tags}{Tag} {/block:Tags}'
+      tags: '{block:Tags}tag--{Tag} {/block:Tags}'
     - 
       type: photo
       src: '{PhotoURL-HighRes}'
       plaintextCaption: '{PlaintextCaption}'
       caption: '{Caption}'
-      tags: '{block:Tags}{Tag} {/block:Tags}'
+      tags: '{block:Tags}tag--{Tag} {/block:Tags}'
     - 
       type: video
       video: '{Video-700}'
       caption: '{PlaintextCaption}'
-      tags: '{block:Tags}{Tag} {/block:Tags}'
+      tags: '{block:Tags}tag--{Tag} {/block:Tags}'

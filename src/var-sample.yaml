@@ -42,20 +42,20 @@ var_sample:
         <p><a href="" target="_blank"><img src="sample/btn_appstore.png"></a></p>
         <p><a href="" target="_blank"><img src="sample/btn_googleplay.png"></a></p>
         <p>推奨環境：iOS 5.1以上、Android 2.3・4.0以上でご利用ください。</p>
-      tags: download
+      tags: tag--download
 
     -
       type: photo
       src: sample/img_cover_1.png
       caption: <p>hogehogehoge</p>
-      tags: 'cover'
+      tags: tag--cover
     -
       type: photo
       src: sample/img_cover_2.png
       caption: <p>hogehogehoge</p>
-      tags: 'cover'
+      tags: tag--cover
     -
       type: photo
       src: sample/img_cover_3.png
       caption: <p>hogehogehoge</p>
-      tags: 'cover'
+      tags: tag--cover

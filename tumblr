@@ -303,19 +303,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 <li><a href="http://b.hatena.ne.jp/entry/http%3A%2F%2Fbakusoku-lp-kit.tumblr.com%2F" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
 <!-- /.sns --></ul>
 <div class="posts">{block:Posts}{block:Text}
-<section class="post--text {block:Tags}{Tag} {/block:Tags}">
+<section class="post--text {block:Tags}tag--{Tag} {/block:Tags}">
 {Body}
 <!-- /.post--text --></section>{/block:Text}{block:Link}
-<section class="post--link {block:Tags}{Tag} {/block:Tags}">
+<section class="post--link {block:Tags}tag--{Tag} {/block:Tags}">
 <a href="{URL}" target="_blank">{Name}</a>
 <!-- /.post--link --></section>{/block:Link}{block:Photo}
-<section class="post--photo {block:Tags}{Tag} {/block:Tags}">
+<section class="post--photo {block:Tags}tag--{Tag} {/block:Tags}">
 <img src="{PhotoURL-HighRes}" alt="{PlaintextCaption}"/>
 <div class="post__caption">
 {Caption}
 <!-- .post__caption --></div>
 <!-- /.post--photo --></section>{/block:Photo}{block:Video}
-<section class="post--video {block:Tags}{Tag} {/block:Tags}">
+<section class="post--video {block:Tags}tag--{Tag} {/block:Tags}">
 {Video-700}
 <!-- /.post--video --></section>{/block:Video}{/block:Posts}
 <!-- /.posts --></div>
@@ -9436,61 +9436,13 @@ return jQuery;
 
 }));
 
-function Covers (opts) {
-    this.$el = opts.$el;
-    this.$prev = opts.$prev;
-    this.$next = opts.$next;
-
-    this.count = this.$el.children().length;
-    
-    this.updateCSS();
-    this.initListeners();
-}
-
-Covers.prototype.updateCSS = function () {
-    var $el = this.$el;
-    var count = this.count;
-
-    $el.css({
-        width: (count * 100) + '%',
-        marginLeft: (-(Math.ceil(count / 2) - 1) * 100) + '%'
-    });
-};
-
-Covers.prototype.initListeners = function () {
-    var self = this;
-    var $prev = this.$prev;
-    var $next = this.$next;
-
-    $prev.on('click', function () {
-        self.shiftRight();
-    });
-
-    $next.on('click', function () {
-        self.shiftLeft();
-    });
-};
-
-Covers.prototype.shiftLeft = function () {
-    var $el = this.$el;
-    var $children = $el.children();
-    $el.append($children.get(0));
-};
-
-Covers.prototype.shiftRight = function () {
-    var $el = this.$el;
-    var $children = $el.children();
-    var count = this.count;
-    $el.prepend($children.get(count - 1));
-};
-
 $(function () {
     // init cover
     (function () {
         var $headerSlide = $('.header__slide');
         var $headerGuide = $('.header__guide');
 
-        var $slidePosts = $('.post--photo.cover');
+        var $slidePosts = $('.post--photo.tag--cover');
         $slidePosts.each(function () {
             var $slidePost = $(this);
             $slidePost.hide();
@@ -9530,118 +9482,6 @@ $(function () {
                 });
             }, waitTime);
         })();
-    })();
-
-    return;
-
-
-    // intro
-    (function () {
-        var $introCover = $('.intro__cover');
-        var $covers = $('.post--photo.cover');
-
-        if (!$covers.length) {
-            $('.intro').hide();
-            return;
-        }
-
-        $covers.each(function () {
-            var $post = $(this);
-            var $li = $('<li />');
-
-            var $img = $post.find('img');
-
-            $li.addClass('cover');
-            $li.css({
-                backgroundImage: 'url(' + $img.attr('src') + ')'
-            });
-            $li.append('<span>' + $img.attr('alt') + '</span>');
-            $introCover.append($li);
-        });
-
-        new Covers({
-            $el: $introCover,
-            $prev: $('.nav--prev'),
-            $next: $('.nav--next')
-        });
-    })();
-
-    // movie
-    (function () {
-        var $movie = $('.movie');
-        var video = $('.post--video iframe').get(0);
-        if (!video) {
-            $movie.hide();
-            return;
-        }
-        $movie.append(video);
-    })();
-
-    // how to use
-    (function () {
-        var $post = $('.post--photo, .post--text').filter('.howtouse');
-        if (!$post.length) {
-            $('.howtouse').hide();
-            return;
-        }
-
-        if ($post.is('.post--photo')) {
-            $('.howtouse__left').append($post.find('.post__caption'));
-            $('.howtouse__right').append($post.find('img'));;
-        } else if ($post.is('.post--text')) {
-            $('.howtouse__left')
-                .attr('class', 'howtouse__center')
-                .append($post.html());
-            $('.howtouse__right').remove();
-        }
-    })();
-
-    // download
-    (function () {
-        var $posts = $('.post--photo, .post--link, .post--text').filter('.download');
-        if (!$posts.length) {
-            $('.download').hide();
-            return;
-        }
-
-        var $ul = $('.download__right ul');
-
-        $posts.each(function () {
-            var $post = $(this);
-
-            if ($post.is('.post--photo')) {
-                $('.download__left').append($post.find('img'));;
-                $('.download__right').append($post.find('.post__caption'));;
-            } else if ($post.is('.post--text')) {
-                $('.download__right').append($post.html());;
-            } else if ($post.is('.post--link')) {
-                var $postLink = $post.find('a');
-                var href = $postLink.attr('href');
-                var className = 'download__link';
-
-                if ($post.is('.ios')) {
-                    className += '--ios';
-                }
-                if ($post.is('.android')) {
-                    className += '--android';
-                }
-
-                $ul.append([
-                    '<li>',
-                    '<a class="' + className + '" href="' + href + '">',
-                    '<span>',
-                    $postLink.text(),
-                    '</span>',
-                    '</a>',
-                    '</li>'
-                ].join(''));
-            }
-        });
-
-        if (!$('.post--photo.download').length) {
-            $('.download__right').attr('class', 'download__center');
-            $('.download__left').remove();
-        }
     })();
 });
 
