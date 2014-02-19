@@ -9445,7 +9445,7 @@ $(function () {
         var $slidePosts = $('.post--photo.tag--cover');
         $slidePosts.each(function () {
             var $slidePost = $(this);
-            $slidePost.hide();
+            $slidePost.remove();
 
             var $slide = $('<li />');
             $slide.addClass('slide');
@@ -9482,6 +9482,37 @@ $(function () {
                 });
             }, waitTime);
         })();
+    })();
+
+    // sort
+    (function () {
+        var $root = $('.posts');
+        var $posts = $([
+            '.post--text',
+            '.post--photo',
+            '.post--video',
+            '.post--link'
+        ].join(','));
+
+        $posts.each(function (index, post) {
+            var matchData = post.className.match(/sort-([0-9]+)/);
+            if (!matchData) {
+                return;
+            }
+            var sortNum = Number(matchData[1]);
+
+            var $prev;
+            for (var i = 0; i < sortNum; i++) {
+                if ($('.sort-' + i).length) {
+                    $prev = $('.sort-' + i);
+                }
+            }
+            if ($prev) {
+                $prev.after(post);
+            } else {
+                $root.prepend(post);
+            }
+        });
     })();
 });
 

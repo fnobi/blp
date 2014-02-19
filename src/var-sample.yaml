@@ -25,6 +25,8 @@ var_sample:
         <p><img src="sample/img_movie.png"></p>
         <p><strong>Prototyping a new got.</strong></p>
         <p>宗教学においては、儀式は、思想が行動として表現されるもので、それによって特定の宗教を信仰する者と信仰しない者を具体的に判別する事が出来るとし、個人ではなく、集団で行う事で教団として社会から認知されるとする所から、宗教集団を構成する要素の1つとして位置づけている。</p>
+      tags: sort-1
+
     -
       type: text
       body:
@@ -35,6 +37,7 @@ var_sample:
         <p><img src="sample/img_howtouse_2.png"></p>
         <p><strong>Amaterasu.</strong></p>
         <p>今やネットに常時接続されていることが当たり前になり、ダイアルアップのような儀式はなくなってしまった。今や我々の生活空間のほとんどはWiFiというインターネットにアクセスするための見えない力で覆われている。ある日、WiFiスポットを神道の神に例えることを思いついた。その土地を守る神様であり、誰かが祈りを捧げると、そのご利益は地域全体に還元される。同様に、誰かがインターネット神社に祈りを捧げると、ご利益として一定時間その周辺にフリーのWiFiスポットが立ち上がり、インターネットに接続すること遠くの人とつながったり、一人の人間が知り得ないほどのあらゆる情報にアクセスできる。目に見えない神の力だ。もしかしたらインターネット神社が全国の各地に設置されることによって、日本人にとって新しい信仰が生まれるかもしれない。</p>
+      tags: sort-2
     -
       type: text
       body:
@@ -42,7 +45,6 @@ var_sample:
         <p><a href="" target="_blank"><img src="sample/btn_appstore.png"></a></p>
         <p><a href="" target="_blank"><img src="sample/btn_googleplay.png"></a></p>
         <p>推奨環境：iOS 5.1以上、Android 2.3・4.0以上でご利用ください。</p>
-      tags: tag--download
 
     -
       type: photo
