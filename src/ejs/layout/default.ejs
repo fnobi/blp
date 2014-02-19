@@ -46,7 +46,8 @@
 <% partial_fbroot(buf) %>
 <section id="wrapper">
 <% content(buf, params) %>
-<!-- /#wrapper --></section><% if (opts.env == 'tumblr') { %>
+<!-- /#wrapper --></section>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><% if (opts.env == 'tumblr') { %>
 <script>
 <% include ../../../js/lp.js %>
 </script><% } else { %>

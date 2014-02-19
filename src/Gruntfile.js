@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     var config = {};
 
     var namespaces = {
-        $: 'bower_components/jquery/jquery.js'
+        // $: 'bower_components/jquery/jquery.js'
     };
 
     // basic
