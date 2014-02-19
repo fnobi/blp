@@ -28,6 +28,7 @@
 <meta property="og:locale" content="ja_JP" />
 <title><%= params.title %></title><% if (opts.env == 'tumblr') { %>
 <meta name="text:Copyright" content=""/>
+<meta name="color:Header" content="#eee"/>
 <meta name="image:OGP" content=""/>
 <style>
 <% include ../../../css/lp.css %>
@@ -39,6 +40,9 @@
 }
 .download__link--android {
   background-image: url('<%= img_path %>/btn_googleplay.png');
+}
+.header {
+    background-color: <%= params.colorHeader %>;
 }
 </style>
 </head>

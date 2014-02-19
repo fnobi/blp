@@ -21,6 +21,7 @@
 <meta property="og:locale" content="ja_JP" />
 <title>{Title}</title>
 <meta name="text:Copyright" content=""/>
+<meta name="color:Header" content="#eee"/>
 <meta name="image:OGP" content=""/>
 <style>
 /* line 17, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -99,37 +100,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   max-width: 960px;
   height: 420px;
   margin: auto;
-  background-color: #eee;
   position: relative;
 }
-/* line 25, ../src/sass/lp.scss */
+/* line 24, ../src/sass/lp.scss */
 .header h1, .header h2 {
   position: absolute;
   width: 100%;
   text-align: center;
   font-weight: bold;
 }
-/* line 32, ../src/sass/lp.scss */
+/* line 31, ../src/sass/lp.scss */
 .header h1 {
   bottom: 50%;
   margin-bottom: 22px;
   font-size: 30px;
 }
-/* line 37, ../src/sass/lp.scss */
+/* line 36, ../src/sass/lp.scss */
 .header h2 {
   top: 50%;
   margin-top: 22px;
   font-size: 20px;
 }
 
-/* line 44, ../src/sass/lp.scss */
+/* line 43, ../src/sass/lp.scss */
 .header__guide {
   position: absolute;
   right: 30px;
   bottom: 30px;
 }
 
-/* line 50, ../src/sass/lp.scss */
+/* line 49, ../src/sass/lp.scss */
 .guide {
   display: inline-block;
   width: 10px;
@@ -146,7 +146,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: relative;
   overflow: hidden;
 }
-/* line 67, ../src/sass/lp.scss */
+/* line 66, ../src/sass/lp.scss */
 .guide:before {
   content: '';
   display: block;
@@ -170,7 +170,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 84, ../src/sass/lp.scss */
+/* line 83, ../src/sass/lp.scss */
 .guide.active:before {
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
@@ -179,7 +179,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: scale(1, 1);
 }
 
-/* line 89, ../src/sass/lp.scss */
+/* line 88, ../src/sass/lp.scss */
 .slide {
   position: absolute;
   width: 100%;
@@ -191,12 +191,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-size: cover;
 }
 
-/* line 98, ../src/sass/lp.scss */
+/* line 97, ../src/sass/lp.scss */
 .sns {
   text-align: center;
   margin-top: 44px;
 }
-/* line 101, ../src/sass/lp.scss */
+/* line 100, ../src/sass/lp.scss */
 .sns li {
   display: inline-block;
 }
@@ -213,41 +213,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 22px 0px;
   overflow: hidden;
 }
-/* line 120, ../src/sass/lp.scss */
+/* line 119, ../src/sass/lp.scss */
 .post p, .post--text p, .post--photo p, .post--video p, .post--link p {
   margin: 44px 0px;
 }
-/* line 124, ../src/sass/lp.scss */
+/* line 123, ../src/sass/lp.scss */
 .post strong, .post--text strong, .post--photo strong, .post--video strong, .post--link strong {
   display: block;
   text-align: center;
   font-size: 26px;
   line-height: 1;
 }
-/* line 131, ../src/sass/lp.scss */
+/* line 130, ../src/sass/lp.scss */
 .post img, .post iframe, .post--text img, .post--text iframe, .post--photo img, .post--photo iframe, .post--video img, .post--video iframe, .post--link img, .post--link iframe {
   display: block;
   margin: auto;
   max-width: 640px;
 }
 
-/* line 138, ../src/sass/lp.scss */
+/* line 137, ../src/sass/lp.scss */
 .post--video iframe {
   width: 640px;
   height: 360px;
 }
 
-/* line 143, ../src/sass/lp.scss */
+/* line 142, ../src/sass/lp.scss */
 .post--video .tumblr_video_container {
   max-width: 640px;
 }
 
-/* line 147, ../src/sass/lp.scss */
+/* line 146, ../src/sass/lp.scss */
 .post--link {
   text-align: center;
 }
 
-/* line 151, ../src/sass/lp.scss */
+/* line 150, ../src/sass/lp.scss */
 .footer {
   margin: auto;
   text-align: center;
@@ -261,6 +261,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 .download__link--android {
   background-image: url('http://blp-preview.fnobi.com/sample/btn_googleplay.png');
+}
+.header {
+    background-color: {color:Header};
 }
 </style>
 </head>
