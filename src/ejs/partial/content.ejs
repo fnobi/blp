@@ -6,10 +6,10 @@
 <ul class="header__guide"></ul>
 <!-- /.header --></header>
 <ul class="sns">
-<li><% partial_likebutton(buf, { url: url }) %></li>
-<li><% partial_tweetbutton(buf, { url: url }) %></li>
-<li><% partial_gplusbutton(buf, { url: url }) %></li>
-<li><% partial_hatenabutton(buf, { url: url }) %></li>
+<li><% partial_likebutton(buf, { url: opts.url }) %></li>
+<li><% partial_tweetbutton(buf, { url: opts.url, count: true }) %></li>
+<li><% partial_gplusbutton(buf, { url: opts.url }) %></li>
+<li><% partial_hatenabutton(buf, { url: opts.url }) %></li>
 <!-- /.sns --></ul>
 <div class="posts"><%= (opts.env == 'tumblr') ? '{block:Posts}' : '' %><% opts.posts.forEach(function (post) { %><% if (post.type == 'text') { %><%= (opts.env == 'tumblr') ? '{block:Text}' : '' %>
 <section class="post--text<%= post.tags ? (' ' + post.tags) : '' %>">
