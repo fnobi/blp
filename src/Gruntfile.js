@@ -105,7 +105,8 @@ module.exports = function (grunt) {
                     generatedImagesPath     : path.resolve(env.sitePath, 'img'),
                     httpImagesPath          : path.resolve(env.httpPath, 'img'),
                     httpGeneratedImagesPath : path.resolve(env.httpPath, 'img'),
-                    environment             : 'development'
+                    environment             : 'production',
+                    outputStyle             : 'compressed'
                 }
             };
     
