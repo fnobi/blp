@@ -48,6 +48,7 @@ $long_margin: 66px;
 
 .guide {
     $size: 10px;
+    $outer_size: $size * 1.5;
 
     display: inline-block;
     width: $size;
@@ -56,24 +57,25 @@ $long_margin: 66px;
 
     border-style: solid;
     border-color: white;
-    border-width: ($size / 4);
+    border-width: ($outer_size - $size) / 2;
 
     margin: 0px ($size / 2);
 
     position: relative;
-    overflow: hidden;
 
     &:before {
+
         content: '';
         display: block;
-        width: $size * 1.5;
-        height: $size * 1.5;
-        background-color: white;
+        width: $outer_size;
+        height: $outer_size;
+        background-color: white; 
 
         position: absolute;
-        top: -$size / 4;
-        left: -$size / 4;
+        top: -($outer_size - $size) / 2;
+        left: -($outer_size - $size) / 2;
 
+        @include border-radius($outer_size);
         @include scale(0);
 
         @include transition-property(transform);
