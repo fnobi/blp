@@ -59,6 +59,7 @@ $(function () {
         $posts.each(function (index, post) {
             var matchData = post.className.match(/tag--sort-([0-9]+)/);
             if (!matchData) {
+                $root.append(post);
                 return;
             }
             var sortNum = Number(matchData[1]);
