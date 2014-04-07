@@ -57,7 +57,7 @@ $(function () {
         ].join(','));
 
         $posts.each(function (index, post) {
-            var matchData = post.className.match(/sort-([0-9]+)/);
+            var matchData = post.className.match(/tag--sort-([0-9]+)/);
             if (!matchData) {
                 return;
             }
@@ -65,8 +65,8 @@ $(function () {
 
             var $prev;
             for (var i = 0; i < sortNum; i++) {
-                if ($('.sort-' + i).length) {
-                    $prev = $('.sort-' + i);
+                if ($('.tag--sort-' + i).length) {
+                    $prev = $('.tag--sort-' + i);
                 }
             }
             if ($prev) {
