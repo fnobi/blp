@@ -23,6 +23,8 @@ var_tumblr:
 
   colorHeader: '{color:Header}'
 
+  colorDivider: '{color:Divider}'
+
   posts:
     - 
       type: text

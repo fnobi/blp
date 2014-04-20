@@ -26,6 +26,10 @@ var_sample:
   imageOGP:
     http://blp-preview.fnobi.com/sample/ogp.jpg
 
+  ifShowDivider: 1
+
+  colorDivider: '#000'
+
   posts:
     -
       type: text

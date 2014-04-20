@@ -33,21 +33,23 @@
 <meta name="color:Bg" content="<%= var_sample.colorBg %>"/>
 <meta name="image:OGP" content="<%= var_sample.imageOGP %>"/>
 <meta name="image:Bg" content="<%= var_sample.imageBg %>"/>
+<meta name="if:ShowDivider" content="<%= var_sample.ifShowDivider %>"/>
+<meta name="color:Divider" content="<%= var_sample.colorDivider %>"/>
 <style>
 <% include ../../../css/lp.css %>
 </style><% } else { %>
-<link rel="stylesheet" href="<%= css_path %>/<%= name %>.css" /><% } %>
+<link rel="stylesheet" href="<%= css_path %>/<%= name %>.css" /><% } %><% if (opts.env == 'tumblr') { %>
 <style>
 #wrapper {
     background-color: <%= params.colorBg %>;
     background-image: url('<%= params.imageBg %>');
 }
-
 .post, .post--text, .post--photo, .post--video, .post--link {
     padding-top: <%= params.textPostMargin %>;
-    padding-bottom: <%= params.textPostMargin %>;
+    padding-bottom: <%= params.textPostMargin %>;{block:IfNotShowDivider}
+    border-style: none;{/block:IfNotShowDivider}
+    border-color: <%= params.colorDivider %>
 }
-
 .download__link--ios {
   background-image: url('<%= img_path %>/btn_appstore.png');
 }
@@ -57,7 +59,7 @@
 .header {
     background-color: <%= params.colorHeader %>;
 }
-</style>
+</style><% } %>
 </head>
 <body>
 <% partial_fbroot(buf) %>
