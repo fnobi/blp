@@ -28,13 +28,17 @@
 <meta property="og:locale" content="ja_JP" />
 <title><%= params.title %></title><% if (opts.env == 'tumblr') { %>
 <meta name="text:Copyright" content=""/>
-<meta name="color:Header" content="#eee"/>
+<meta name="color:Header" content="<%= var_sample.colorHeader %>"/>
+<meta name="color:Bg" content="<%= var_sample.colorBg %>"/>
 <meta name="image:OGP" content=""/>
 <style>
 <% include ../../../css/lp.css %>
 </style><% } else { %>
 <link rel="stylesheet" href="<%= css_path %>/<%= name %>.css" /><% } %>
 <style>
+#wrapper {
+    background-color: <%= params.colorBg %>;
+}
 .download__link--ios {
   background-image: url('<%= img_path %>/btn_appstore.png');
 }

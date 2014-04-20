@@ -14,11 +14,12 @@ var_tumblr:
   textCopyright:
     '{text:Copyright}'
 
-  colorHeader:
-    '{color:Header}'
-
   imageOGP:
     '{image:OGP}'
+
+  colorBg: '{color:Bg}'
+
+  colorHeader: '{color:Header}'
 
   posts:
     - 
