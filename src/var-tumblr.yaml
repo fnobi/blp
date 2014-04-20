@@ -15,15 +15,15 @@ var_tumblr:
 
   textPostMargin: '{text:PostMargin}'
 
-  imageBg: '{image:Bg}'
+  imageBg: '{image:BgImage}'
 
-  imageOGP: '{image:OGP}'
+  imageOGP: '{image:OGPImage}'
 
-  colorBg: '{color:Bg}'
+  colorBg: '{color:BgColor}'
 
-  colorHeader: '{color:Header}'
+  colorHeader: '{color:HeaderColor}'
 
-  colorDivider: '{color:Divider}'
+  colorDivider: '{color:DividerColor}'
 
   posts:
     - 
