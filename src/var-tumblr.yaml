@@ -11,8 +11,9 @@ var_tumblr:
   avater:
     '{PortraitURL-128}'
 
-  textCopyright:
-    '{text:Copyright}'
+  textCopyright: '{text:Copyright}'
+
+  textPostMargin: '{text:PostMargin}'
 
   imageBg: '{image:Bg}'
 

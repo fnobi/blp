@@ -21,6 +21,7 @@
 <meta property="og:locale" content="ja_JP" />
 <title>{Title}</title>
 <meta name="text:Copyright" content=""/>
+<meta name="text:PostMargin" content="22px"/>
 <meta name="color:Header" content="#eee"/>
 <meta name="color:Bg" content="#fff"/>
 <meta name="image:OGP" content="http://blp-preview.fnobi.com/sample/ogp.jpg"/>
@@ -34,6 +35,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     background-color: {color:Bg};
     background-image: {image:Bg};
 }
+
+.post, .post--text, .post--photo, .post--video, .post--link {
+    padding-top: {text:PostMargin};
+    padding-bottom: {text:PostMargin};
+}
+
 .download__link--ios {
   background-image: url('http://blp-preview.fnobi.com/sample/btn_appstore.png');
 }

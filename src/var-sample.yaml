@@ -14,6 +14,9 @@ var_sample:
   textCopyright:
     面白法人カヤック
 
+  textPostMargin:
+    22px
+
   colorBg: '#fff'
 
   colorHeader: '#eee'
