@@ -18,6 +18,8 @@ var_sample:
 
   colorHeader: '#eee'
 
+  imageBg: ''
+
   imageOGP:
     http://blp-preview.fnobi.com/sample/ogp.jpg
 

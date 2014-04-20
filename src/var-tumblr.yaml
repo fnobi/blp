@@ -14,8 +14,9 @@ var_tumblr:
   textCopyright:
     '{text:Copyright}'
 
-  imageOGP:
-    '{image:OGP}'
+  imageBg: '{image:Bg}'
+
+  imageOGP: '{image:OGP}'
 
   colorBg: '{color:Bg}'
 

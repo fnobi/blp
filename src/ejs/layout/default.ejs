@@ -30,7 +30,8 @@
 <meta name="text:Copyright" content=""/>
 <meta name="color:Header" content="<%= var_sample.colorHeader %>"/>
 <meta name="color:Bg" content="<%= var_sample.colorBg %>"/>
-<meta name="image:OGP" content=""/>
+<meta name="image:OGP" content="<%= var_sample.imageOGP %>"/>
+<meta name="image:Bg" content="<%= var_sample.imageBg %>"/>
 <style>
 <% include ../../../css/lp.css %>
 </style><% } else { %>
@@ -38,6 +39,7 @@
 <style>
 #wrapper {
     background-color: <%= params.colorBg %>;
+    background-image: <%= params.imageBg %>;
 }
 .download__link--ios {
   background-image: url('<%= img_path %>/btn_appstore.png');
