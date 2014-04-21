@@ -134,6 +134,10 @@ $long_margin: 66px;
         margin: auto;
         max-width: $content_width;
     }
+
+    a img:hover {
+        @include opacity(0.5);
+    }
 }
 
 .post--video iframe {
