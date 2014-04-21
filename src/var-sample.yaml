@@ -17,6 +17,10 @@ var_sample:
   textPostMargin:
     22px
 
+  textHeaderWidth: 960px
+
+  textHeaderHeight: 420px
+
   colorBg: '#fff'
 
   colorHeader: '#eee'

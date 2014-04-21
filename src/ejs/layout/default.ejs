@@ -29,6 +29,8 @@
 <title><%= params.title %></title><% if (opts.env == 'tumblr') { %>
 <meta name="text:Copyright" content=""/>
 <meta name="text:Post margin" content="<%= var_sample.textPostMargin %>"/>
+<meta name="text:Header width" content="<%= var_sample.textHeaderWidth %>"/>
+<meta name="text:Header height" content="<%= var_sample.textHeaderHeight %>"/>
 <meta name="color:Header color" content="<%= var_sample.colorHeader %>"/>
 <meta name="color:Bg color" content="<%= var_sample.colorBg %>"/>
 <meta name="image:OGP image" content="<%= var_sample.imageOGP %>"/>
@@ -58,6 +60,8 @@
 }
 .header {
     background-color: <%= params.colorHeader %>;
+    max-width: <%= params.textHeaderWidth %>;
+    height: <%= params.textHeaderHeight %>;
 }
 </style><% } %>
 </head>

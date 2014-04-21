@@ -15,6 +15,10 @@ var_tumblr:
 
   textPostMargin: '{text:PostMargin}'
 
+  textHeaderWidth: '{text:HeaderWidth}'
+
+  textHeaderHeight: '{text:HeaderHeight}'
+
   imageBg: '{image:BgImage}'
 
   imageOGP: '{image:OGPImage}'

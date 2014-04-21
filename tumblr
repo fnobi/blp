@@ -22,6 +22,8 @@
 <title>{Title}</title>
 <meta name="text:Copyright" content=""/>
 <meta name="text:Post margin" content="22px"/>
+<meta name="text:Header width" content="960px"/>
+<meta name="text:Header height" content="420px"/>
 <meta name="color:Header color" content="#eee"/>
 <meta name="color:Bg color" content="#fff"/>
 <meta name="image:OGP image" content="http://blp-preview.fnobi.com/sample/ogp.jpg"/>
@@ -51,6 +53,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 .header {
     background-color: {color:HeaderColor};
+    max-width: {text:HeaderWidth};
+    height: {text:HeaderHeight};
 }
 </style>
 </head>
